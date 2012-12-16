@@ -1,1 +1,1 @@
-bot: bundle exec ruby turbot.rb
+web: bundle exec ruby turbot.rb
