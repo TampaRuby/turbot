@@ -1,4 +1,5 @@
 source :rubygems
 
-gem "cinch" 
+gem "cinch"
 gem "mechanize"
+gem "rMeetup"
