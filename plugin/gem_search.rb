@@ -10,11 +10,13 @@ module TurbotPlugins
 
     def gemsearch(m, query)
       response = JSON(open GemUrl % query, &:read)
-      m.reply (!response.is_a?(Array) || response.empty?) ?
-        'No results'                            :
-        "#{response.size} results: #{response.map{|r|r['name']}.join(', ')}"
+      m.reply pretty_response(response)
     rescue
       m.reply "Something exploded"
+    end
+
+    def pretty_response(response)
+      "#{response.size} results: #{response.map{|r|r['name']}.join(', ')}"
     end
   end
 end
