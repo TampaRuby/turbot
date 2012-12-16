@@ -1,9 +1,21 @@
 GEM
   remote: http://rubygems.org/
   specs:
+    addressable (2.3.2)
     cinch (2.0.3)
     domain_name (0.5.6)
       unf (~> 0.0.3)
+    excon (0.16.10)
+    heroku (2.33.5)
+      heroku-api (~> 0.3.7)
+      launchy (>= 0.3.2)
+      netrc (~> 0.7.7)
+      rest-client (~> 1.6.1)
+      rubyzip
+    heroku-api (0.3.7)
+      excon (~> 0.16.10)
+    launchy (2.1.2)
+      addressable (~> 2.3)
     mechanize (2.5.1)
       domain_name (~> 0.5, >= 0.5.1)
       mime-types (~> 1.17, >= 1.17.2)
@@ -15,8 +27,13 @@ GEM
     mime-types (1.19)
     net-http-digest_auth (1.2.1)
     net-http-persistent (2.8)
+    netrc (0.7.7)
     nokogiri (1.5.5)
     ntlm-http (0.1.1)
+    rMeetup (1.0)
+    rest-client (1.6.7)
+      mime-types (>= 1.16)
+    rubyzip (0.9.9)
     unf (0.0.5)
       unf_ext
     unf_ext (0.0.5)
@@ -27,4 +44,6 @@ PLATFORMS
 
 DEPENDENCIES
   cinch
+  heroku
   mechanize
+  rMeetup
