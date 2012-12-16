@@ -4,7 +4,7 @@ require 'yaml'
 require 'pry'
 
 PREFIX = /^\./
-SETTINGS = OpenStruct.new(YAML.load_file(File.expand_path('./TurBot.yaml'))[:settings])
+SETTINGS = OpenStruct.new(YAML.load_file(File.expand_path('./turbot.yaml'))[:settings])
 
 module TurbotPlugins;end
 
