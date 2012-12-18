@@ -4,7 +4,7 @@ A Ruby IRC bot.
 
 ## Description
 
-Turbot is built using the Ruby IRC framework [cinch](https://github.com/Jberlinsky/rmeetup/)
+Turbot is built using the Ruby IRC framework [cinch](https://github.com/cinchrb/cinch)
 
 ## Building
 
