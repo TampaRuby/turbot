@@ -1,4 +1,4 @@
-require 'rMeetup'
+require 'rmeetup'
 
 # Use a gem to access event details from the Meetup API
 # https://github.com/Jberlinsky/rmeetup/
