@@ -21,3 +21,8 @@ $ ruby trubot.rb
 or
 
 [Heroku Config Vars](https://devcenter.heroku.com/articles/config-vars)
+
+
+## Contributing
+
+Please fork and submit a pull request on an individual branch per change.
