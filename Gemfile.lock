@@ -17,6 +17,7 @@ GEM
     net-http-persistent (2.8)
     nokogiri (1.5.5)
     ntlm-http (0.1.1)
+    rmeetup (1.0.0)
     unf (0.0.5)
       unf_ext
     unf_ext (0.0.5)
@@ -26,5 +27,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  cinch
-  mechanize
+  cinch (~> 2.0.3)
+  mechanize (~> 2.5.1)
+  rmeetup (~> 1.0.0)
