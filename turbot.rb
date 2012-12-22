@@ -11,13 +11,14 @@ module TurbotPlugins;end
 
 require './plugin/gem_search.rb'
 require './plugin/meetup.rb'
+require './plugin/help.rb'
 
 bot = Cinch::Bot.new do
   configure do |c|
     c.server   = SETTINGS.server
     c.channels = [SETTINGS.channel]
     c.nick     = SETTINGS.nick
-    c.plugins.plugins = [TurbotPlugins::GemSearch, TurbotPlugins::Meetup]
+    c.plugins.plugins = [TurbotPlugins::GemSearch, TurbotPlugins::Meetup, TurbotPlugins::Help]
   end
 end
 
