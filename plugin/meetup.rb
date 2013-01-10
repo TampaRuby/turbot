@@ -7,8 +7,13 @@ module TurbotPlugins
   class Meetup
     include Cinch::Plugin
     set :prefix, PREFIX
-    match /nextmeetup/, method: :nextmeetup
 
+    match /help/, method: :help
+    def help(m)
+      m.reply ".nextmeetup = Get the next meetup info"
+    end
+
+    match /nextmeetup/, method: :nextmeetup
     def nextmeetup(m)
       m.reply get_meetup_info
     rescue
