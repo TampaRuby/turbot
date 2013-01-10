@@ -14,7 +14,7 @@ MEETUP_API_KEY = ENV['MEETUP_API_KEY']
 dir = File.dirname(File.expand_path(__FILE__))
 Dir.chdir dir
 $: << "#{dir}/plugin"
-Dir.chdir('plugin') {Dir.glob '*.rb', &method(:require)}
+Dir.chdir('plugin') {Dir.glob '*cinch_plugin.rb', &method(:require)}
 #####################################################
 
 bot = Cinch::Bot.new do
