@@ -6,7 +6,6 @@ require 'pry'
 
 PREFIX = /^\./
 SETTINGS = OpenStruct.new(YAML.load_file(File.expand_path('./turbot.yaml'))[:settings])
-MEETUP_API_KEY = ENV['MEETUP_API_KEY']
 
 #####################################################
 # Setup plugins

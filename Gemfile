@@ -6,6 +6,7 @@ gem "rMeetup", "~> 1.0"
 
 group :test, :development do
   gem "rspec"
+  gem "vcr", "~> 2.4.0"
   gem 'webmock', '~> 1.9.0', :require => 'webmock/rspec'
   gem "pry"
 end
