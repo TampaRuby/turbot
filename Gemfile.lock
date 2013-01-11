@@ -39,6 +39,7 @@ GEM
     unf (0.0.5)
       unf_ext
     unf_ext (0.0.5)
+    vcr (2.4.0)
     webmock (1.9.0)
       addressable (>= 2.2.7)
       crack (>= 0.1.7)
@@ -53,4 +54,5 @@ DEPENDENCIES
   pry
   rMeetup (~> 1.0)
   rspec
+  vcr (~> 2.4.0)
   webmock (~> 1.9.0)

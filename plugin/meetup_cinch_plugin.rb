@@ -19,9 +19,10 @@ module TurbotPlugins
     rescue
       m.reply "Sorry, something went wrong with the lookup."
     end
+    alias_method :meetup, :nextmeetup
 
     def get_meetup_info
-      RMeetup::Client.api_key = MEETUP_API_KEY
+      RMeetup::Client.api_key = ENV['MEETUP_API_KEY']
       response = RMeetup::Client.fetch(:events,{:group_urlname => "tampa-rb"})
       "Next meeting is at #{response[0].event["venue_name"]} starting at #{response[0].event["time"]}. \n #{response[0].event["event_url"]}"
     end
