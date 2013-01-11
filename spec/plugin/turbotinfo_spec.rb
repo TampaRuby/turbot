@@ -1,7 +1,4 @@
-require 'rspec'
-require 'cinch'
-
-PREFIX = /^\./
+require 'spec_helper'
 
 require_relative '../../plugin/turbotinfo_cinch_plugin.rb'
 
