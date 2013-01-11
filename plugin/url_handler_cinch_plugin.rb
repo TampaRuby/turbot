@@ -1,5 +1,5 @@
 # Author: Robert Jackson (robert.w.jackson@me.com)
-#     Inspired by epitron/pookie: https://github.com/epitron/pookie/blob/master/handlers/url_handler.rb
+# Inspired by epitron/pookie: https://github.com/epitron/pookie/blob/master/handlers/url_handler.rb
 
 require 'uri'
 require 'colored'
