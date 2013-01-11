@@ -2,11 +2,11 @@ require 'bundler/setup'
 Bundler.require(:default, :test)
 
 PREFIX = /^\./
-
+ENV["MEETUP_API_KEY"] ||= "MEETUP_API_KEY"
 VCR.configure do |c|
   c.cassette_library_dir = 'fixtures/vcr_cassettes'
   c.hook_into :webmock # or :fakeweb
-  c.filter_sensitive_data("MEETUP_API_KEY") { ENV['MEETUP_API_KEY'] || "MEETUP_API_KEY" }
+  c.filter_sensitive_data("MEETUP_API_KEY") { ENV['MEETUP_API_KEY'] }
 end
 
 RSpec.configure do |config|
