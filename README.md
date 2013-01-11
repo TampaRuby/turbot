@@ -10,7 +10,7 @@ Turbot is built using the Ruby IRC framework [cinch](https://github.com/cinchrb/
 
 ```bash
 $ bundle install
-$ ruby trubot.rb
+$ ruby turbot.rb
 ```
 
 
