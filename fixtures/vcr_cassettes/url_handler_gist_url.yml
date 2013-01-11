@@ -1,0 +1,102 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.github.com/gists/4513047
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Mechanize/2.5.1 Ruby/1.9.3p327 (http://github.com/tenderlove/mechanize/)
+      Accept-Encoding:
+      - gzip,deflate,identity
+      Accept-Charset:
+      - ISO-8859-1,utf-8;q=0.7,*;q=0.7
+      Accept-Language:
+      - en-us,en;q=0.5
+      Host:
+      - api.github.com
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - 300
+  response:
+    status:
+      code: 200
+      message: !binary |-
+        T0s=
+    headers:
+      !binary "U2VydmVy":
+      - !binary |-
+        R2l0SHViLmNvbQ==
+      !binary "RGF0ZQ==":
+      - !binary |-
+        RnJpLCAxMSBKYW4gMjAxMyAxOToxNDowMiBHTVQ=
+      !binary "Q29udGVudC1UeXBl":
+      - !binary |-
+        YXBwbGljYXRpb24vanNvbjsgY2hhcnNldD11dGYtOA==
+      !binary "VHJhbnNmZXItRW5jb2Rpbmc=":
+      - !binary |-
+        Y2h1bmtlZA==
+      !binary "Q29ubmVjdGlvbg==":
+      - !binary |-
+        a2VlcC1hbGl2ZQ==
+      !binary "U3RhdHVz":
+      - !binary |-
+        MjAwIE9L
+      !binary "WC1SYXRlbGltaXQtTGltaXQ=":
+      - !binary |-
+        NjA=
+      !binary "WC1SYXRlbGltaXQtUmVtYWluaW5n":
+      - !binary |-
+        NTg=
+      !binary "WC1HaXRodWItTWVkaWEtVHlwZQ==":
+      - !binary |-
+        Z2l0aHViLmJldGE=
+      !binary "RXRhZw==":
+      - !binary |-
+        ImNhOWUwZDVlNzEyYTUyY2JkYjFlODgyY2QwNTcxZWI2Ig==
+      !binary "WC1Db250ZW50LVR5cGUtT3B0aW9ucw==":
+      - !binary |-
+        bm9zbmlmZg==
+      !binary "TGFzdC1Nb2RpZmllZA==":
+      - !binary |-
+        RnJpLCAxMSBKYW4gMjAxMyAxODo1OTozNCBHTVQ=
+      !binary "Q2FjaGUtQ29udHJvbA==":
+      - !binary |-
+        cHVibGljLCBzLW1heGFnZT02MCwgbWF4LWFnZT02MA==
+      !binary "VmFyeQ==":
+      - !binary |-
+        QWNjZXB0
+      !binary "Q29udGVudC1FbmNvZGluZw==":
+      - !binary |-
+        Z3ppcA==
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA+1W247bNhD9FS2BvtkSdbMuaFMUARLkLQi2L80WBiWOJGZ1
+        A0nZ2Rj69w5lWVk7wDoO0Ld9E4U5M+Th8Mw5kEoo3cknkn4+kLxibQlbpZke
+        FEkPhEMNWnQtLuiK6E6zmqThijDOxfw/HFck75pGaA18yzRJiUddf03dteve
+        u3EaJqnv/0NWZAdSYS4MiBIaFj6jGyhokmQcisDjzPO9mAUhjzilHJIsAAQN
+        EiuSSutepY7DemGXQldDZmNNp8S9KycIXZ8GkXNLVgXSnE8/9YDp/zbLFYEd
+        tFptXyw5YKhy5BeWP6qudY6Qg9NLsWP504hZOlmyVnxjEz83JUOkwgRIv5TI
+        5S37mDEHp9u3IMeDI6HvzG6Krq67Pe75pnQLCjPUXSnMpZ3OvCQVbfkLSRFl
+        zjhkKpeiv52kMyRmMge97XATApE38IvRpWQ7hjezFRzJoLzgLmXcTWIGIYuj
+        TUA5o8GGRRFLKEPAHH5eRUE+SLBPyaYuPgY611L+yf9YnoEXxDbY7JE1TNgt
+        aIcpBVo9exu/ee9Ew0pQ+HGq9vx7bRp5HXjU7qcLkZCD2GHX/cIjuMBiNsOR
+        6238CHkzb/SmPpkQh+lxI9kjGcd/TR/LR1Shz/hp1Ob6Qz3XhhMG98Zh6Ty8
+        yPtBZp22PnX4nu/u7qy3FeSPlkZVtLpB27Ztrl7obT+o6uIUpsJzNZp1yPwy
+        3dVz9oIiBkYRl10Zda10U/9chRkprvH6IwUIMWAJL21tEut+yGqRk1TLAWb2
+        X77E82LH67ryxs4gC8/1T7Iw8zw9x5l6Q/ursp/PyIuB9ars54SYtntV9sVR
+        XXTL/63sqCyihslqGjEwC9fWX9FELt5Mw1ft9DVDD3KMblljPNt5PA4wtr+i
+        nhixeEXXixiaRn+T0ZxzGkERxYwlEdvgaI2LTRZFEbAkm6bQ922hG0KHPOBc
+        JWk71LWR8FbjMDKWIElpbP1uyf2XrB7gjWWmNXrWchA4cmw5ZE8lNMpGl+ec
+        FmtcrNHUPrQn9HEebd9YWugaUusTwt7PMOuvjx+s9fLLej9lfmgfWtdPw81l
+        bWOYf5hRwSamYfwdcVnvHpS2qm5vDQqdmtWArjq+bYSallwUBXpJq5BdM0eg
+        eRctbI+B9oO5JSW+IT9eGI/j+B8inz5BYQwAAA==
+    http_version: 
+  recorded_at: Fri, 11 Jan 2013 19:14:03 GMT
+recorded_with: VCR 2.4.0
