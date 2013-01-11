@@ -119,5 +119,16 @@ describe TurbotPlugins::UrlHandler do
         VCR.use_cassette('url_handler_generic_url') { plugin.listen(message) }
       end
     end
+
+    context "When a youtube url is given." do
+      let(:url)        {'http://www.youtube.com/watch?v=hFzz6EZmkq8'}
+      let(:message)    {double('message', :raw => url)}
+      let(:reply_text) {"video: \x02The Perfect Guide To Holiday Etiquette\x02 (length: \x02146\x02, views: \x021713769\x02, rating: \x024.8\x02, posted: \x022012-11-20T15:23:36+00:00\x02)"}
+
+      it "Should reply correctly." do
+        message.should_receive(:reply).with(reply_text)
+        VCR.use_cassette('url_handler_youtube') { plugin.listen(message) }
+      end
+    end
   end
 end
