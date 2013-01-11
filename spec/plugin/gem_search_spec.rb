@@ -1,8 +1,4 @@
-require 'rspec'
-require 'webmock/rspec'
-require 'cinch'
-
-PREFIX = /^\./
+require 'spec_helper'
 
 require_relative '../../plugin/gem_search_cinch_plugin.rb'
 
