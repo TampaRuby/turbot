@@ -1,8 +1,9 @@
-require 'cinch'
+require 'bundler/setup'
+Bundler.require(:default)
+
 require 'ostruct'
 require 'yaml'
-require 'rmeetup'
-require 'pry'
+require 'json'
 
 PREFIX = /^\./
 SETTINGS = OpenStruct.new(YAML.load_file(File.expand_path('./turbot.yaml'))[:settings])

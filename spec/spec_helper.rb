@@ -2,6 +2,7 @@ require 'bundler/setup'
 Bundler.require(:default, :test)
 
 PREFIX = /^\./
+
 ENV["MEETUP_API_KEY"] ||= "MEETUP_API_KEY"
 VCR.configure do |c|
   c.cassette_library_dir = 'fixtures/vcr_cassettes'
