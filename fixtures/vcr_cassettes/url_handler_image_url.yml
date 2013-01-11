@@ -1,0 +1,64 @@
+---
+http_interactions:
+- request:
+    method: head
+    uri: http://farm9.staticflickr.com/8013/7619514930_4a1ed85893_z.jpg
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Mechanize/2.5.1 Ruby/1.9.3p327 (http://github.com/tenderlove/mechanize/)
+      Accept-Encoding:
+      - gzip,deflate,identity
+      Accept-Charset:
+      - ISO-8859-1,utf-8;q=0.7,*;q=0.7
+      Accept-Language:
+      - en-us,en;q=0.5
+      Host:
+      - farm9.staticflickr.com
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - 300
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 11 Jan 2013 18:54:52 GMT
+      Content-Type:
+      - image/jpeg
+      Content-Length:
+      - '165311'
+      Connection:
+      - keep-alive
+      P3p:
+      - policyref="http://info.yahoo.com/w3c/p3p.xml", CP="CAO DSP COR CUR ADM DEV
+        TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND PHY
+        ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC GOV"
+      Cache-Control:
+      - max-age=315360000,public
+      Expires:
+      - Tue, 10 Jan 2023 05:40:11 UTC
+      Last-Modified:
+      - Sun, 22 Jul 2012 03:51:46 GMT
+      Accept-Ranges:
+      - bytes
+      Age:
+      - '170541'
+      X-Cache:
+      - HIT from photocache914.flickr.bf1.yahoo.com
+      X-Cache-Lookup:
+      - HIT from photocache914.flickr.bf1.yahoo.com:84
+      Via:
+      - 1.1 photocache914.flickr.bf1.yahoo.com:84 (squid/2.7.STABLE9)
+    body:
+      encoding: US-ASCII
+      string: ''
+    http_version: 
+  recorded_at: Fri, 11 Jan 2013 18:54:53 GMT
+recorded_with: VCR 2.4.0
