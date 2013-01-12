@@ -7,6 +7,7 @@ require 'mechanize'
 
 require_relative 'url_handler/common'
 require_relative 'url_handler/github_repo_handler'
+require_relative 'url_handler/gist_handler'
 
 module TurbotPlugins::UrlHandler
   class Processor
@@ -24,7 +25,7 @@ module TurbotPlugins::UrlHandler
     private
 
     def print_link_info(url)
-      [GithubRepoHandler].each do |klass|
+      [GithubRepoHandler, GistHandler].each do |klass|
         return klass.new(url).info if klass.match?(url)
       end
 
@@ -33,8 +34,6 @@ module TurbotPlugins::UrlHandler
         twitter_status_info(url)
       when twitter_user_regexp
         twitter_user_info(url)
-      when gist_regexp
-        gist_info(url)
       when youtube_regexp
         youtube_info(url)
       when image_regexp
@@ -82,23 +81,6 @@ module TurbotPlugins::UrlHandler
       end
 
       url
-    end
-
-    def github_info(url)
-    end
-
-    def gist_regexp
-      %r{https?://gist\.github\.com/(\w+)$}
-    end
-
-    def gist_info(url)
-      gist_number = gist_regexp.match(url)[1]
-      url = 'https://api.github.com/gists/' + gist_number
-
-      api_data = get_json_data(url)
-      description, user, forks = api_data.values_at('description', 'user', 'forks')
-
-      "gist: \2#{user['login']}\2 forks: \2#{forks.length}\2 desc:\2#{(description[0..140])}\2"
     end
 
     def image_regexp
