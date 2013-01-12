@@ -30,6 +30,8 @@ module TurbotPlugins
         github_info(url)
       when gist_regexp
         gist_info(url)
+      when youtube_regexp
+        youtube_info(url)
       when image_regexp
         image_info(url)
       else
@@ -143,6 +145,24 @@ module TurbotPlugins
       else
         element.to_s
       end
+    end
+
+    def youtube_regexp
+       %r{https?://(www\.)?youtube\.com/watch\?}
+    end
+
+    def youtube_info(url)
+      video_id = url.match(/\?v\=(\w+)$/)[1]
+      page     = agent.get("http://gdata.youtube.com/feeds/api/videos/#{video_id}?v=1&alt=json")
+      json     = JSON.parse(page.body)
+
+      views    = json['entry']["yt$statistics"]["viewCount"].to_i
+      date     = DateTime.parse json['entry']["published"]["$t"]
+      time     = json['entry']["media$group"]["yt$duration"]["seconds"].to_i
+      title    = json['entry']["media$group"]["media$title"]["$t"]
+      rating   = json['entry']["gd$rating"]["average"] ? "%0.1f" % json['entry']["gd$rating"]["average"] : "?"
+
+      "video: \2#{title}\2 (length: \2#{time}\2, views: \2#{views}\2, rating: \2#{rating}\2, posted: \2#{date}\2)"
     end
   end
 end

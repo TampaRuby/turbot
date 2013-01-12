@@ -1,0 +1,70 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://gdata.youtube.com/feeds/api/videos/hFzz6EZmkq8?alt=json&v=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Mechanize/2.5.1 Ruby/1.9.3p327 (http://github.com/tenderlove/mechanize/)
+      Accept-Encoding:
+      - gzip,deflate,identity
+      Accept-Charset:
+      - ISO-8859-1,utf-8;q=0.7,*;q=0.7
+      Accept-Language:
+      - en-us,en;q=0.5
+      Host:
+      - gdata.youtube.com
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - 300
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Gdata-User-Country:
+      - US
+      Content-Type:
+      - application/json; charset=UTF-8
+      Access-Control-Allow-Origin:
+      - ! '*'
+      Expires:
+      - Fri, 11 Jan 2013 21:11:37 GMT
+      Date:
+      - Fri, 11 Jan 2013 21:11:37 GMT
+      Cache-Control:
+      - private, max-age=300, no-transform
+      Vary:
+      - ! '*'
+      Gdata-Version:
+      - '1.0'
+      Last-Modified:
+      - Fri, 11 Jan 2013 20:32:46 GMT
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Server:
+      - GSE
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: US-ASCII
+      string: ! '{"version":"1.0","encoding":"UTF-8","entry":{"xmlns":"http://www.w3.org/2005/Atom","xmlns$media":"http://search.yahoo.com/mrss/","xmlns$gd":"http://schemas.google.com/g/2005","xmlns$yt":"http://gdata.youtube.com/schemas/2007","id":{"$t":"http://gdata.youtube.com/feeds/api/videos/hFzz6EZmkq8"},"published":{"$t":"2012-11-20T15:23:36.000Z"},"updated":{"$t":"2013-01-11T20:32:46.000Z"},"category":[{"scheme":"http://schemas.google.com/g/2005#kind","term":"http://gdata.youtube.com/schemas/2007#video"},{"scheme":"http://gdata.youtube.com/schemas/2007/categories.cat","term":"Entertainment","label":"Entertainment"}],"title":{"$t":"The
+        Perfect Guide To Holiday Etiquette","type":"text"},"content":{"$t":"Everything
+        you need to know about holiday etiquette. Everything.\nMusic :: Suite in a
+        Baroque style \nhttp://www.soundcloud.com/stephen-valentine","type":"text"},"link":[{"rel":"alternate","type":"text/html","href":"http://www.youtube.com/watch?v=hFzz6EZmkq8&feature=youtube_gdata"},{"rel":"http://gdata.youtube.com/schemas/2007#video.responses","type":"application/atom+xml","href":"http://gdata.youtube.com/feeds/api/videos/hFzz6EZmkq8/responses?v=1"},{"rel":"http://gdata.youtube.com/schemas/2007#video.related","type":"application/atom+xml","href":"http://gdata.youtube.com/feeds/api/videos/hFzz6EZmkq8/related?v=1"},{"rel":"http://gdata.youtube.com/schemas/2007#mobile","type":"text/html","href":"http://m.youtube.com/details?v=hFzz6EZmkq8"},{"rel":"self","type":"application/atom+xml","href":"http://gdata.youtube.com/feeds/api/videos/hFzz6EZmkq8?v=1"}],"author":[{"name":{"$t":"BuzzFeedVideo"},"uri":{"$t":"http://gdata.youtube.com/feeds/api/users/BuzzFeedVideo"}}],"gd$comments":{"gd$feedLink":{"rel":"http://gdata.youtube.com/schemas/2007#comments","href":"http://gdata.youtube.com/feeds/api/videos/hFzz6EZmkq8/comments?v=1","countHint":1845}},"yt$hd":{},"media$group":{"media$category":[{"$t":"Entertainment","label":"Entertainment","scheme":"http://gdata.youtube.com/schemas/2007/categories.cat"}],"media$content":[{"url":"http://www.youtube.com/v/hFzz6EZmkq8?version=3&f=videos&app=youtube_gdata","type":"application/x-shockwave-flash","medium":"video","isDefault":"true","expression":"full","duration":146,"yt$format":5},{"url":"rtsp://v1.cache2.c.youtube.com/CiILENy73wIaGQmvkmZG6PNchBMYDSANFEgGUgZ2aWRlb3MM/0/0/0/video.3gp","type":"video/3gpp","medium":"video","expression":"full","duration":146,"yt$format":1},{"url":"rtsp://v1.cache2.c.youtube.com/CiILENy73wIaGQmvkmZG6PNchBMYESARFEgGUgZ2aWRlb3MM/0/0/0/video.3gp","type":"video/3gpp","medium":"video","expression":"full","duration":146,"yt$format":6}],"media$description":{"$t":"Everything
+        you need to know about holiday etiquette. Everything.\nMusic :: Suite in a
+        Baroque style \nhttp://www.soundcloud.com/stephen-valentine","type":"plain"},"media$keywords":{},"media$player":[{"url":"http://www.youtube.com/watch?v=hFzz6EZmkq8&feature=youtube_gdata_player"}],"media$thumbnail":[{"url":"http://i.ytimg.com/vi/hFzz6EZmkq8/0.jpg","height":360,"width":480,"time":"00:01:13"},{"url":"http://i.ytimg.com/vi/hFzz6EZmkq8/1.jpg","height":90,"width":120,"time":"00:00:36.500"},{"url":"http://i.ytimg.com/vi/hFzz6EZmkq8/2.jpg","height":90,"width":120,"time":"00:01:13"},{"url":"http://i.ytimg.com/vi/hFzz6EZmkq8/3.jpg","height":90,"width":120,"time":"00:01:49.500"}],"media$title":{"$t":"The
+        Perfect Guide To Holiday Etiquette","type":"plain"},"yt$duration":{"seconds":"146"}},"gd$rating":{"average":4.772031,"max":5,"min":1,"numRaters":14616,"rel":"http://schemas.google.com/g/2005#overall"},"yt$statistics":{"favoriteCount":"0","viewCount":"1713769"}}}'
+    http_version: 
+  recorded_at: Fri, 11 Jan 2013 21:11:37 GMT
+recorded_with: VCR 2.4.0
