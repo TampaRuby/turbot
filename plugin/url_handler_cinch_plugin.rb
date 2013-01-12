@@ -5,8 +5,11 @@ require 'uri'
 require 'open-uri'
 require 'mechanize'
 
-module TurbotPlugins
-  class UrlHandler
+require_relative 'url_handler/common'
+require_relative 'url_handler/github_repo_handler'
+
+module TurbotPlugins::UrlHandler
+  class Processor
     include Cinch::Plugin
 
     listen_to :channel
@@ -21,13 +24,15 @@ module TurbotPlugins
     private
 
     def print_link_info(url)
+      [GithubRepoHandler].each do |klass|
+        return klass.new(url).info if klass.match?(url)
+      end
+
       case url
       when twitter_status_regexp
         twitter_status_info(url)
       when twitter_user_regexp
         twitter_user_info(url)
-      when github_regexp
-        github_info(url)
       when gist_regexp
         gist_info(url)
       when youtube_regexp
@@ -79,19 +84,7 @@ module TurbotPlugins
       url
     end
 
-    def github_regexp
-      %r{https?://(?:www\.)?github\.com/([^/]+?)/([^/]+)}
-    end
-
     def github_info(url)
-      username, repository = url.scan(github_regexp).first
-
-      url = "https://api.github.com/repos/#{username}/#{repository}"
-      api_data = get_json_data(url)
-
-      watchers, forks, desc = api_data.values_at('watchers','forks', 'description')
-
-      "github: \2#{username}/#{repository}\2 - #{desc} (watchers: \2#{watchers}\2, forks: \2#{forks}\2)"
     end
 
     def gist_regexp
@@ -106,11 +99,6 @@ module TurbotPlugins
       description, user, forks = api_data.values_at('description', 'user', 'forks')
 
       "gist: \2#{user['login']}\2 forks: \2#{forks.length}\2 desc:\2#{(description[0..140])}\2"
-    end
-
-    def get_json_data(url)
-      page = agent.get(url)
-      JSON.parse(page.body)
     end
 
     def image_regexp
