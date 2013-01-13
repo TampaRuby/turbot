@@ -16,7 +16,7 @@ describe TurbotPlugins::GithubStatus do
   end
 
   context "#last_message" do
-    let(:reply_text) {"github last message: \x02\x02 - \x02good\x02 - \x02Everything operating normally.\x02"}
+    let(:reply_text) {"github last message: \x022013-01-11T15:02:20Z\x02 - \x02good\x02 - \x02Everything operating normally.\x02"}
 
     it "should reply with the last human github status update." do
       m.should_receive(:reply).with(reply_text)
@@ -26,7 +26,7 @@ describe TurbotPlugins::GithubStatus do
 
   context "#help" do
     it "should send it's help info." do
-      m.should_receive(:reply).with(".github status = Show latest status update for Github.")
+      m.should_receive(:reply).with(".github status = Show latest status update for Github. (will auto-print every 5 minutes when github is having issues)")
       m.should_receive(:reply).with(".github last message = Show latest manual status update for Github.")
       plugin.help(m)
     end

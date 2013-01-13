@@ -10,7 +10,7 @@ module TurbotPlugins
 
     match /help/, :method => :help
     def help(m)
-      m.reply ".github status = Show latest status update for Github."
+      m.reply ".github status = Show latest status update for Github. (will auto-print every 5 minutes when github is having issues)"
       m.reply ".github last message = Show latest manual status update for Github."
     end
 
