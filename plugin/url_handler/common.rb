@@ -5,7 +5,22 @@ require 'open-uri'
 require 'mechanize'
 
 module TurbotPlugins::UrlHandler
+  module Handlers
+    def self.handlers
+      @handlers
+    end
+
+    def self.add_handler(handler)
+      @handlers ||= []
+      @handlers << handler
+    end
+  end
+
   module Common
+    def self.included(base)
+      Handlers.add_handler(base)
+    end
+
     private
 
     def agent

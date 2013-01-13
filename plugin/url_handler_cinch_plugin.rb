@@ -17,10 +17,7 @@ module TurbotPlugins::UrlHandler
     listen_to :channel
 
     def handlers
-      [GithubRepoHandler,  GistHandler,
-       TwitterUserHandler, TwitterStatusHandler,
-       YoutubeHandler,     ImageHandler,
-       GenericHandler]
+      Handlers.handlers
     end
 
     def listen(m)
