@@ -16,18 +16,18 @@ module TurbotPlugins::UrlHandler
 
     listen_to :channel
 
-    def listen(m)
-      URI.extract(m.raw, ['http','https']).each do |url|
-        m.reply print_link_info(url)
-      end
+    def handlers
+      [GithubRepoHandler,  GistHandler,
+       TwitterUserHandler, TwitterStatusHandler,
+       YoutubeHandler,     ImageHandler,
+       GenericHandler]
     end
 
-    private
+    def listen(m)
+      URI.extract(m.raw, ['http','https']).each do |url|
+        handler = handlers.find{|h| h.match?(url)}
 
-    def print_link_info(url)
-      [GithubRepoHandler, GistHandler, TwitterUserHandler,
-       TwitterStatusHandler, YoutubeHandler, ImageHandler, GenericHandler].each do |klass|
-        return klass.new(url).info if klass.match?(url)
+        m.reply handler.new(url).info
       end
     end
   end
