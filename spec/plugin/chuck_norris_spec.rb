@@ -17,6 +17,8 @@ describe TurbotPlugins::ChuckNorris do
   context "#help" do
     it "should print the plugins help message." do
       m.should_receive(:reply).with(".chuck norris = Rockin' Norris Quote")
+      m.should_receive(:reply).with(".chuck says = Rockin' Norris Quote")
+      m.should_receive(:reply).with(".chuck = Rockin' Norris Quote")
       plugin.help(m)
     end
   end
