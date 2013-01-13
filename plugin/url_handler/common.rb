@@ -1,5 +1,8 @@
+require 'uri'
 require 'cgi'
 require 'json'
+require 'open-uri'
+require 'mechanize'
 
 module TurbotPlugins::UrlHandler
   module Common
