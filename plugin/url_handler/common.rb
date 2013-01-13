@@ -1,3 +1,6 @@
+require 'cgi'
+require 'json'
+
 module TurbotPlugins::UrlHandler
   module Common
     private
