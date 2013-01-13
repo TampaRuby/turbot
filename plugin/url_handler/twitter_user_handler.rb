@@ -11,11 +11,7 @@ module TurbotPlugins::UrlHandler
     end
 
     def initialize(url)
-      self.url = if url =~ %r{#!/(.+)}
-                   'https://twitter.com/' + $1
-                 else
-                   url
-                 end
+      self.url = 'https://twitter.com/' + REGEXP.match(url)[1]
     end
 
     def page
