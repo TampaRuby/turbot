@@ -1,0 +1,50 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://cowsay.morecode.org/say?format=text&message=Turbot%20Rocks!!
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Mechanize/2.5.1 Ruby/1.9.3p327 (http://github.com/tenderlove/mechanize/)
+      Accept-Encoding:
+      - gzip,deflate,identity
+      Accept-Charset:
+      - ISO-8859-1,utf-8;q=0.7,*;q=0.7
+      Accept-Language:
+      - en-us,en;q=0.5
+      Host:
+      - cowsay.morecode.org
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - 300
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/plain
+      Vary:
+      - Accept-Encoding
+      Date:
+      - Sun, 13 Jan 2013 17:21:32 GMT
+      Server:
+      - Google Frontend
+      Cache-Control:
+      - private
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: US-ASCII
+      string: ! "  ______________\n< Turbot Rocks!! >\n  --------------\n         \\
+        \  ^__^ \n          \\  (oo)\\_______\n             (__)\\       )\\/\\\n
+        \                ||----w |\n                 ||     ||\n    "
+    http_version: 
+  recorded_at: Sun, 13 Jan 2013 17:21:32 GMT
+recorded_with: VCR 2.4.0
