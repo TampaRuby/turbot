@@ -8,6 +8,7 @@ require 'mechanize'
 require_relative 'url_handler/common'
 require_relative 'url_handler/github_repo_handler'
 require_relative 'url_handler/gist_handler'
+require_relative 'url_handler/twitter_user_handler'
 
 module TurbotPlugins::UrlHandler
   class Processor
@@ -25,15 +26,13 @@ module TurbotPlugins::UrlHandler
     private
 
     def print_link_info(url)
-      [GithubRepoHandler, GistHandler].each do |klass|
+      [GithubRepoHandler, GistHandler, TwitterUserHandler].each do |klass|
         return klass.new(url).info if klass.match?(url)
       end
 
       case url
       when twitter_status_regexp
         twitter_status_info(url)
-      when twitter_user_regexp
-        twitter_user_info(url)
       when youtube_regexp
         youtube_info(url)
       when image_regexp
@@ -55,24 +54,6 @@ module TurbotPlugins::UrlHandler
       tweeter = page.at(".permalink-tweet .username").text
 
       "tweet: <\2#{tweeter}\2> #{tweet}"
-    end
-
-    def twitter_user_regexp
-      %r{(https?://twitter\.com/)(?:#!/)?([^/]+)/?$}
-    end
-
-    def twitter_user_info(url)
-      url = cleanup_twitter_hashbang_url(url)
-      page = agent.get(url)
-
-      username  = twitter_user_regexp.match(url)[2]
-      fullname  = page.at(".user-actions")["data-name"]
-
-      tweets    = clean_text(page.at("ul.stats li a[data-element-term='tweet_stats'] strong"))
-      followers = clean_text(page.at("ul.stats li a[data-element-term='follower_stats'] strong"))
-      following = clean_text(page.at("ul.stats li a[data-element-term='following_stats'] strong"))
-
-      "tweeter: \2@#{username}\2 (\2#{fullname}\2) | tweets: \2#{tweets}\2, following: \2#{following}\2, followers: \2#{followers}\2"
     end
 
     def cleanup_twitter_hashbang_url(url)
