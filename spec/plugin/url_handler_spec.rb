@@ -2,7 +2,7 @@ require 'spec_helper'
 
 require_relative '../../plugin/url_handler_cinch_plugin.rb'
 
-describe TurbotPlugins::UrlHandler do
+describe TurbotPlugins::UrlHandler::Processor do
   let(:standard_url_root)  {'https://twitter.com/'}
   let(:hashbang_url_root)  {standard_url_root + '#!/'}
   let(:seconds_in_a_day) {24 * 60 * 60}
@@ -66,7 +66,7 @@ describe TurbotPlugins::UrlHandler do
 
     context "when a github url is given" do
       let(:message)    {double('message', :raw => url)}
-      let(:reply_text) {"github: \x02rondale-sc/turbot\x02 - Tampa.rb IRC bot. (watchers: \x023\x02, forks: \x021\x02)"}
+      let(:reply_text) {"github: \x02rondale-sc/turbot\x02 - Tampa.rb IRC bot. (watchers: \x024\x02, forks: \x021\x02)"}
 
       context "for the base of a repo" do
         let(:url) {'https://github.com/rondale-sc/turbot'}
