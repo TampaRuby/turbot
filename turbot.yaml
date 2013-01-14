@@ -1,5 +1,7 @@
 ---
 :settings:
-  :nick: Turbot
+  :nick: turbot
   :server: irc.freenode.net
-  :channel: ! '#tampa.rb'
+  :channels:
+    - '#tamparb'
+    - '#turbot' 

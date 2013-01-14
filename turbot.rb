@@ -20,7 +20,7 @@ Dir.chdir('plugin') {Dir.glob '*cinch_plugin.rb', &method(:require)}
 bot = Cinch::Bot.new do
   configure do |c|
     c.server          = SETTINGS.server
-    c.channels        = [SETTINGS.channel]
+    c.channels        = SETTINGS.channels
     c.nick            = SETTINGS.nick
     c.plugins.plugins = TurbotPlugins.constants.map(&TurbotPlugins.method(:const_get))
   end
