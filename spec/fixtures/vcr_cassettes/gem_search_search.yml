@@ -1,0 +1,52 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://rubygems.org/api/v1/search.json?query=hippo
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.2.2
+      Date:
+      - Sun, 13 Jan 2013 07:17:41 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '576'
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.11
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Etag:
+      - ! '"502bf9edd3f71d30755b814e68913b2a"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 9bc91d84c02a5f18bd46c2334931fc3b
+      X-Runtime:
+      - '0.192401'
+      X-Rack-Cache:
+      - miss
+      Status:
+      - '200'
+    body:
+      encoding: US-ASCII
+      string: ! '[{"name":"hippo","downloads":9853,"version":"0.5.1","version_downloads":79,"platform":"ruby","authors":"Robert
+        Jackson, Jon Jackson","info":"HIPAA Transaction Set Generator/Parser","project_uri":"http://rubygems.org/gems/hippo","gem_uri":"http://rubygems.org/gems/hippo-0.5.1.gem","homepage_uri":"http://github.com/promedical/hippo","wiki_uri":null,"documentation_uri":null,"mailing_list_uri":null,"source_code_uri":null,"bug_tracker_uri":null,"dependencies":{"development":[{"name":"minitest","requirements":">=
+        0"},{"name":"rake","requirements":"~> 10.0.2"}],"runtime":[]}}]'
+    http_version: 
+  recorded_at: Sun, 13 Jan 2013 07:07:08 GMT
+recorded_with: VCR 2.4.0
