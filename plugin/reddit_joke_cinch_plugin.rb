@@ -12,8 +12,8 @@ module TurbotPlugins
       m.reply ".joke = Random joke from reddit.com/r/jokes"
     end
 
-    match /joke me/, method: :joke
-    match /joke/, method: :joke
+    match /joke me/i, method: :joke
+    match /joke/i, method: :joke
     def joke(m)
       m.reply random_joke
     end

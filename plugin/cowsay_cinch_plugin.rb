@@ -10,7 +10,7 @@ module TurbotPlugins
       m.reply ".cowsay \x02Bovine Phrase\x02 = Awesome Cowsay Graphic"
     end
 
-    match /cowsay (.+)/, method: :cowsay
+    match /cowsay (.+)/i, method: :cowsay
     def cowsay(m, text)
       page = agent.get('http://cowsay.morecode.org/say?format=text&message=' + text)
       m.reply page.body

@@ -13,9 +13,9 @@ module TurbotPlugins
       m.reply ".chuck = Rockin' Norris Quote"
     end
 
-    match /chuck norris$/, method: :chuck_norris
-    match /chuck says$/, method: :chuck_norris
-    match /chuck/, method: :chuck_norris, :prefix => //
+    match /chuck norris$/i, method: :chuck_norris
+    match /chuck says$/i, method: :chuck_norris
+    match /chuck/i, method: :chuck_norris, :prefix => //
     def chuck_norris(m)
       m.reply quote
     end

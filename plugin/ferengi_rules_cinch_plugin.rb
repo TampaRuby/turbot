@@ -7,8 +7,8 @@ module TurbotPlugins
       m.reply ".rule of aqcuisition = Print a random Ferengi rule of acquisition."
     end
 
-    match /rules? of acquisition/, method: :print_random_rule, prefix: PREFIX
-    match /(ferengi rule|money|profit|sale|discount|opportunity)/, method: :print_random_rule, prefix: //
+    match /rules? of acquisition/i, method: :print_random_rule, prefix: PREFIX
+    match /(ferengi rule|money|profit|sale|discount|opportunity)/i, method: :print_random_rule, prefix: //
     def print_random_rule(m)
       m.reply random_rule
     end
