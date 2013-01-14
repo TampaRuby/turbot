@@ -30,11 +30,7 @@ module TurbotPlugins
       json_data = open('http://www.reddit.com/r/jokes.json').read
       unformatted_jokes = JSON.parse(json_data)['data']['children']
       unformatted_jokes.collect do |joke|
-        if joke['data']['selftext'] =~ /^\.\.\./
-          joke['data']['title'].gsub(/\.\.\.$/,'') + joke['data']['selftext'].gsub(/^\.\.\./,'')
-        else
-          joke['data']['selftext']
-        end
+        joke['data']['title'].gsub(/\.\.\.$/,'') + ' ' + joke['data']['selftext'].gsub(/^\.\.\./,'')
       end
     end
   end
