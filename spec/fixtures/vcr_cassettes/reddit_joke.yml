@@ -1,0 +1,686 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.reddit.com/r/jokes.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Set-Cookie:
+      - reddit_first=%7B%22firsttime%22%3A%20%22first%22%7D; Domain=reddit.com; expires=Thu,
+        31 Dec 2037 23:59:59 GMT; Path=/
+      Server:
+      - ! '''; DROP TABLE servertypes; --'
+      Date:
+      - Mon, 14 Jan 2013 00:24:58 GMT
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - Transfer-Encoding
+      - keep-alive
+    body:
+      encoding: US-ASCII
+      string: ! '{"kind": "Listing", "data": {"modhash": "", "children": [{"kind":
+        "t3", "data": {"domain": "self.Jokes", "banned_by": null, "media_embed": {},
+        "subreddit": "Jokes", "selftext_html": "&lt;!-- SC_OFF --&gt;&lt;div class=\"md\"&gt;&lt;p&gt;As
+        a group of soldiers stood in formation at an Army Base, the Drill Sergeant
+        said, &amp;quot;All right! All you idiots fall out.&amp;quot;\nAs the rest
+        of the squad wandered away, one soldier remained at attention.The Drill Instructor
+        walked over until he was eye-to-eye with him, and then raised a single eyebrow.
+        The soldier smiled and said, &amp;quot;Sure was a lot of &amp;#39;em, huh,
+        sir?&amp;quot;&lt;/p&gt;\n&lt;/div&gt;&lt;!-- SC_ON --&gt;", "selftext": "As
+        a group of soldiers stood in formation at an Army Base, the Drill Sergeant
+        said, \"All right! All you idiots fall out.\"\nAs the rest of the squad wandered
+        away, one soldier remained at attention.The Drill Instructor walked over until
+        he was eye-to-eye with him, and then raised a single eyebrow. The soldier
+        smiled and said, \"Sure was a lot of ''em, huh, sir?\"", "likes": null, "link_flair_text":
+        null, "id": "16htfp", "clicked": false, "title": "One soldier", "num_comments":
+        130, "score": 988, "approved_by": null, "over_18": false, "hidden": false,
+        "thumbnail": "", "subreddit_id": "t5_2qh72", "edited": false, "link_flair_css_class":
+        null, "author_flair_css_class": null, "downs": 511, "saved": false, "is_self":
+        true, "permalink": "/r/Jokes/comments/16htfp/one_soldier/", "name": "t3_16htfp",
+        "created": 1358121654.0, "url": "http://www.reddit.com/r/Jokes/comments/16htfp/one_soldier/",
+        "author_flair_text": null, "author": "mayo_is_a_instrument", "created_utc":
+        1358092854.0, "media": null, "num_reports": null, "ups": 1499}}, {"kind":
+        "t3", "data": {"domain": "self.Jokes", "banned_by": null, "media_embed": {},
+        "subreddit": "Jokes", "selftext_html": "&lt;!-- SC_OFF --&gt;&lt;div class=\"md\"&gt;&lt;p&gt;They
+        give them gas.&lt;/p&gt;\n&lt;/div&gt;&lt;!-- SC_ON --&gt;", "selftext": "They
+        give them gas.\n\n", "likes": null, "link_flair_text": null, "id": "16hn7i",
+        "clicked": false, "title": "Why don''t Jewish cannibals like eating Germans?
+        ", "num_comments": 8, "score": 135, "approved_by": null, "over_18": false,
+        "hidden": false, "thumbnail": "", "subreddit_id": "t5_2qh72", "edited": false,
+        "link_flair_css_class": null, "author_flair_css_class": null, "downs": 104,
+        "saved": false, "is_self": true, "permalink": "/r/Jokes/comments/16hn7i/why_dont_jewish_cannibals_like_eating_germans/",
+        "name": "t3_16hn7i", "created": 1358111057.0, "url": "http://www.reddit.com/r/Jokes/comments/16hn7i/why_dont_jewish_cannibals_like_eating_germans/",
+        "author_flair_text": null, "author": "MaybeHarryRedknapp", "created_utc":
+        1358082257.0, "media": null, "num_reports": null, "ups": 239}}, {"kind": "t3",
+        "data": {"domain": "self.Jokes", "banned_by": null, "media_embed": {}, "subreddit":
+        "Jokes", "selftext_html": "&lt;!-- SC_OFF --&gt;&lt;div class=\"md\"&gt;&lt;p&gt;There
+        was a man driving down the road behind an 18 wheeler;  at every stoplight
+        the trucker would get out of the cab, run back and bang on the trailer door.\nAfter
+        seeing this at several intersections in a row the motorist followed him until
+        he pulled into a parking lot.&lt;/p&gt;\n\n&lt;p&gt;When they both had come
+        to a stop the truck driver once again jumped out and started banging on the
+        trailer door.\nThe motorist went up to him and said, &amp;quot;I don&amp;#39;t
+        mean to be nosey but why do you keep banging on that door?&amp;quot;\nTo which
+        the trucker replied, &amp;quot;Sorry, can&amp;#39;t talk now, I have 20 tons
+        of canaries and a 10 ton limit, so I have to keep half of them flying at all
+        times.&amp;quot;&lt;/p&gt;\n&lt;/div&gt;&lt;!-- SC_ON --&gt;", "selftext":
+        "\n \nThere was a man driving down the road behind an 18 wheeler;  at every
+        stoplight the trucker would get out of the cab, run back and bang on the trailer
+        door.\nAfter seeing this at several intersections in a row the motorist followed
+        him until he pulled into a parking lot.\n \nWhen they both had come to a stop
+        the truck driver once again jumped out and started banging on the trailer
+        door.\nThe motorist went up to him and said, \"I don''t mean to be nosey but
+        why do you keep banging on that door?\"\nTo which the trucker replied, \"Sorry,
+        can''t talk now, I have 20 tons of canaries and a 10 ton limit, so I have
+        to keep half of them flying at all times.\"\n ", "likes": null, "link_flair_text":
+        null, "id": "16hoy8", "clicked": false, "title": "20 Tons of Canaries", "num_comments":
+        21, "score": 109, "approved_by": null, "over_18": false, "hidden": false,
+        "thumbnail": "", "subreddit_id": "t5_2qh72", "edited": false, "link_flair_css_class":
+        null, "author_flair_css_class": null, "downs": 64, "saved": false, "is_self":
+        true, "permalink": "/r/Jokes/comments/16hoy8/20_tons_of_canaries/", "name":
+        "t3_16hoy8", "created": 1358114702.0, "url": "http://www.reddit.com/r/Jokes/comments/16hoy8/20_tons_of_canaries/",
+        "author_flair_text": null, "author": "sliveytove", "created_utc": 1358085902.0,
+        "media": null, "num_reports": null, "ups": 173}}, {"kind": "t3", "data": {"domain":
+        "self.Jokes", "banned_by": null, "media_embed": {}, "subreddit": "Jokes",
+        "selftext_html": "&lt;!-- SC_OFF --&gt;&lt;div class=\"md\"&gt;&lt;p&gt;As
+        he wakes up, he notices the room is dark, and a doctor is standing there.  He
+        asks the doctor, &amp;quot;Why did you close all the window shades?&amp;quot;&lt;/p&gt;\n\n&lt;p&gt;The
+        doctor says, &amp;quot;There was a large fire across the street, and we didn&amp;#39;t
+        want you to think you didn&amp;#39;t survive the operation.&amp;quot;&lt;/p&gt;\n&lt;/div&gt;&lt;!--
+        SC_ON --&gt;", "selftext": "As he wakes up, he notices the room is dark, and
+        a doctor is standing there.  He asks the doctor, \"Why did you close all the
+        window shades?\"\n\nThe doctor says, \"There was a large fire across the street,
+        and we didn''t want you to think you didn''t survive the operation.\"", "likes":
+        null, "link_flair_text": null, "id": "16ifzx", "clicked": false, "title":
+        "A lawyer undergoes heart surgury, and is in bed in the recovery area", "num_comments":
+        4, "score": 26, "approved_by": null, "over_18": false, "hidden": false, "thumbnail":
+        "", "subreddit_id": "t5_2qh72", "edited": false, "link_flair_css_class": null,
+        "author_flair_css_class": null, "downs": 3, "saved": false, "is_self": true,
+        "permalink": "/r/Jokes/comments/16ifzx/a_lawyer_undergoes_heart_surgury_and_is_in_bed_in/",
+        "name": "t3_16ifzx", "created": 1358142897.0, "url": "http://www.reddit.com/r/Jokes/comments/16ifzx/a_lawyer_undergoes_heart_surgury_and_is_in_bed_in/",
+        "author_flair_text": "Top Submitter", "author": "edfitz83", "created_utc":
+        1358114097.0, "media": null, "num_reports": null, "ups": 29}}, {"kind": "t3",
+        "data": {"domain": "self.Jokes", "banned_by": null, "media_embed": {}, "subreddit":
+        "Jokes", "selftext_html": "&lt;!-- SC_OFF --&gt;&lt;div class=\"md\"&gt;&lt;p&gt;A
+        young man was lost wandering in a forest, when he came upon a small house.
+        He knocked on the door and was greeted by an ancient Chinese man with a long,
+        grey beard. &amp;quot;I&amp;#39;m lost,&amp;quot; said the man. &amp;quot;Can
+        you put me up for the night?&amp;quot;&lt;/p&gt;\n\n&lt;p&gt;&amp;quot;Certainly,&amp;quot;
+        the Chinese man said, &amp;quot;but on one condition. If you so much as lay
+        a finger on my daughter, I will inflict upon you the three worst Chinese tortures
+        known to man.&amp;quot;&lt;/p&gt;\n\n&lt;p&gt;&amp;quot;Ok,&amp;quot; said
+        the man, thinking that the daughter must be pretty old as well, and entered
+        the house.&lt;/p&gt;\n\n&lt;p&gt;Before dinner, the daughter came down the
+        stairs. She was young, beautiful, and had a fantastic figure. She was obviously
+        attracted to the young man since she couldn&amp;#39;t keep her eyes off him
+        during the meal. Remembering the old man&amp;#39;s warning, he ignored her
+        and went up to bed alone. But during he night, he could bear it no longer,
+        and sneaked into her room for a night of passion. He was careful to keep everything
+        quiet so the old man wouldn&amp;#39;t hear. Near dawn he crept back to his
+        room, exhausted, but happy.&lt;/p&gt;\n\n&lt;p&gt;He woke to feel a pressure
+        on his chest. Opening his eyes he saw a large rock on his chest with a note
+        on it that read, &amp;quot;Chinese Torture 1: Large rock on chest.&amp;quot;&lt;/p&gt;\n\n&lt;p&gt;&amp;quot;Well,
+        that&amp;#39;s pretty crappy,&amp;quot; he thought. &amp;quot;If that&amp;#39;s
+        the best the old man can do then I don&amp;#39;t have much to worry about.&amp;quot;
+        He picked the boulder up, walked over to the window and threw the boulder
+        out. As he did so he noticed another note on it that read: &amp;quot;Chinese
+        Torture 2: Rock tied to left testicle.&amp;quot;&lt;/p&gt;\n\n&lt;p&gt;In
+        a panic he glanced down and saw the rope that was already getting close to
+        the end. Figuring that a few broken bones was better than castration, he jumped
+        out of the window after the boulder.&lt;/p&gt;\n\n&lt;p&gt;As he plummeted
+        downward he saw a large sign on the ground that read, &amp;quot;Chinese Torture
+        3: Right testicle tied to bedpost.&amp;quot; &lt;/p&gt;\n&lt;/div&gt;&lt;!--
+        SC_ON --&gt;", "selftext": "A young man was lost wandering in a forest, when
+        he came upon a small house. He knocked on the door and was greeted by an ancient
+        Chinese man with a long, grey beard. \"I''m lost,\" said the man. \"Can you
+        put me up for the night?\"\n\n\"Certainly,\" the Chinese man said, \"but on
+        one condition. If you so much as lay a finger on my daughter, I will inflict
+        upon you the three worst Chinese tortures known to man.\"\n\n\"Ok,\" said
+        the man, thinking that the daughter must be pretty old as well, and entered
+        the house.\n\nBefore dinner, the daughter came down the stairs. She was young,
+        beautiful, and had a fantastic figure. She was obviously attracted to the
+        young man since she couldn''t keep her eyes off him during the meal. Remembering
+        the old man''s warning, he ignored her and went up to bed alone. But during
+        he night, he could bear it no longer, and sneaked into her room for a night
+        of passion. He was careful to keep everything quiet so the old man wouldn''t
+        hear. Near dawn he crept back to his room, exhausted, but happy.\n\nHe woke
+        to feel a pressure on his chest. Opening his eyes he saw a large rock on his
+        chest with a note on it that read, \"Chinese Torture 1: Large rock on chest.\"\n\n\"Well,
+        that''s pretty crappy,\" he thought. \"If that''s the best the old man can
+        do then I don''t have much to worry about.\" He picked the boulder up, walked
+        over to the window and threw the boulder out. As he did so he noticed another
+        note on it that read: \"Chinese Torture 2: Rock tied to left testicle.\"\n\nIn
+        a panic he glanced down and saw the rope that was already getting close to
+        the end. Figuring that a few broken bones was better than castration, he jumped
+        out of the window after the boulder.\n\nAs he plummeted downward he saw a
+        large sign on the ground that read, \"Chinese Torture 3: Right testicle tied
+        to bedpost.\" ", "likes": null, "link_flair_text": null, "id": "16ij3q", "clicked":
+        false, "title": "Chinese Torture 1: Large rock on chest", "num_comments":
+        2, "score": 20, "approved_by": null, "over_18": false, "hidden": false, "thumbnail":
+        "", "subreddit_id": "t5_2qh72", "edited": false, "link_flair_css_class": null,
+        "author_flair_css_class": null, "downs": 2, "saved": false, "is_self": true,
+        "permalink": "/r/Jokes/comments/16ij3q/chinese_torture_1_large_rock_on_chest/",
+        "name": "t3_16ij3q", "created": 1358145656.0, "url": "http://www.reddit.com/r/Jokes/comments/16ij3q/chinese_torture_1_large_rock_on_chest/",
+        "author_flair_text": null, "author": "shroomse", "created_utc": 1358116856.0,
+        "media": null, "num_reports": null, "ups": 22}}, {"kind": "t3", "data": {"domain":
+        "self.Jokes", "banned_by": null, "media_embed": {}, "subreddit": "Jokes",
+        "selftext_html": "&lt;!-- SC_OFF --&gt;&lt;div class=\"md\"&gt;&lt;p&gt;Bubba
+        got drunk and died in a fire in his trailer caused by his cigarette. His body
+        was so badly burned that the morgue needed someone to I.D. the body, so they
+        called his two close friends, Jim-Bob and Billy-Joe to come and try to I.D.
+        the body.&lt;/p&gt;\n\n&lt;p&gt;Jim-Bob went in and the mortician pulled back
+        the sheet, and Jim-Bob said, &amp;quot;Yep, he&amp;#39;s got burnt up purdy
+        bad. Roll &amp;#39;im over.&amp;quot; So, the mortician rolled him over, and
+        Jim-Bob looked at his butt and said, &amp;quot;Nope, dat ain&amp;#39;t Bubba.&amp;quot;
+        The mortician didn&amp;#39;t say anything, but thought that was a little bit
+        strange.&lt;/p&gt;\n\n&lt;p&gt;Then, he brought in Billy-Joe to I.D. the body.
+        Billy-Joe looked at him and said&amp;#39; &amp;quot;Yep, he&amp;#39;s burnt
+        up sumpin&amp;#39; real bad. Roll &amp;#39;im over.&amp;quot; The mortician
+        rolled him over, and Billy-Joe looked down at his butt and said, &amp;quot;Nuh-uh,
+        &amp;#39;at ain&amp;#39;t Bubba. The mortician said, &amp;quot;How can you
+        tell?&amp;quot;&lt;/p&gt;\n\n&lt;p&gt;Billy-Joe said, &amp;quot;Well, Bubba
+        had two ass holes, ya know.&amp;quot; &amp;quot;What? He had two a$$ holes?
+        Impossible!&amp;quot; said the mortician. &amp;quot;Yep. Everyone in town
+        knowed he had two ass holes, cause every time the three of us went to town,
+        everyone would say, &amp;#39;Here comes Bubba with them two ass holes.&amp;#39;
+        &lt;/p&gt;\n&lt;/div&gt;&lt;!-- SC_ON --&gt;", "selftext": "Bubba got drunk
+        and died in a fire in his trailer caused by his cigarette. His body was so
+        badly burned that the morgue needed someone to I.D. the body, so they called
+        his two close friends, Jim-Bob and Billy-Joe to come and try to I.D. the body.\n\nJim-Bob
+        went in and the mortician pulled back the sheet, and Jim-Bob said, \"Yep,
+        he''s got burnt up purdy bad. Roll ''im over.\" So, the mortician rolled him
+        over, and Jim-Bob looked at his butt and said, \"Nope, dat ain''t Bubba.\"
+        The mortician didn''t say anything, but thought that was a little bit strange.\n\nThen,
+        he brought in Billy-Joe to I.D. the body. Billy-Joe looked at him and said''
+        \"Yep, he''s burnt up sumpin'' real bad. Roll ''im over.\" The mortician rolled
+        him over, and Billy-Joe looked down at his butt and said, \"Nuh-uh, ''at ain''t
+        Bubba. The mortician said, \"How can you tell?\"\n\nBilly-Joe said, \"Well,
+        Bubba had two ass holes, ya know.\" \"What? He had two a$$ holes? Impossible!\"
+        said the mortician. \"Yep. Everyone in town knowed he had two ass holes, cause
+        every time the three of us went to town, everyone would say, ''Here comes
+        Bubba with them two ass holes.'' ", "likes": null, "link_flair_text": null,
+        "id": "16gp94", "clicked": false, "title": "Two Assholes", "num_comments":
+        89, "score": 1008, "approved_by": null, "over_18": false, "hidden": false,
+        "thumbnail": "", "subreddit_id": "t5_2qh72", "edited": false, "link_flair_css_class":
+        null, "author_flair_css_class": null, "downs": 855, "saved": false, "is_self":
+        true, "permalink": "/r/Jokes/comments/16gp94/two_assholes/", "name": "t3_16gp94",
+        "created": 1358064654.0, "url": "http://www.reddit.com/r/Jokes/comments/16gp94/two_assholes/",
+        "author_flair_text": null, "author": "FhRuth", "created_utc": 1358035854.0,
+        "media": null, "num_reports": null, "ups": 1863}}, {"kind": "t3", "data":
+        {"domain": "self.Jokes", "banned_by": null, "media_embed": {}, "subreddit":
+        "Jokes", "selftext_html": "&lt;!-- SC_OFF --&gt;&lt;div class=\"md\"&gt;&lt;p&gt;An
+        aide walks into the oval office. George W. Bush is currently president, and
+        the Iraq war is dragging out into a long and grueling occupation. The aide
+        presents the numbers from yesterday to the President.&lt;/p&gt;\n\n&lt;p&gt;&amp;quot;Mr.
+        President, yesterday the US coalition forces killed a confirmed 36 insurgents.&amp;quot;&lt;/p&gt;\n\n&lt;p&gt;The
+        President nodded his head patriotically.&lt;/p&gt;\n\n&lt;p&gt;&amp;quot;There
+        were some losses on our end, however.&amp;quot; The aide continued. &amp;quot;We
+        lost a US hummer with four soldiers in it to an IED outside of Tekrit, and
+        2 Brazilian soldiers were killed in a crossfire in Baghdad.&amp;quot;&lt;/p&gt;\n\n&lt;p&gt;The
+        president nodded solemnly with the news of the hummer, but his face was ashen
+        by the end of the sentence, and he buried his face in his hands. The aide
+        looked startled, &amp;quot;Sir, what&amp;#39;s the matter.&amp;quot;&lt;/p&gt;\n\n&lt;p&gt;With
+        scared eyes, the president looked up and mumbled &amp;quot;How many is a brazilian?&amp;quot;&lt;/p&gt;\n&lt;/div&gt;&lt;!--
+        SC_ON --&gt;", "selftext": "An aide walks into the oval office. George W.
+        Bush is currently president, and the Iraq war is dragging out into a long
+        and grueling occupation. The aide presents the numbers from yesterday to the
+        President.\n\n\"Mr. President, yesterday the US coalition forces killed a
+        confirmed 36 insurgents.\"\n\nThe President nodded his head patriotically.\n\n\"There
+        were some losses on our end, however.\" The aide continued. \"We lost a US
+        hummer with four soldiers in it to an IED outside of Tekrit, and 2 Brazilian
+        soldiers were killed in a crossfire in Baghdad.\"\n\nThe president nodded
+        solemnly with the news of the hummer, but his face was ashen by the end of
+        the sentence, and he buried his face in his hands. The aide looked startled,
+        \"Sir, what''s the matter.\"\n\nWith scared eyes, the president looked up
+        and mumbled \"How many is a brazilian?\"", "likes": null, "link_flair_text":
+        null, "id": "16i52r", "clicked": false, "title": "Have yourself a laugh on
+        my cake day!", "num_comments": 8, "score": 33, "approved_by": null, "over_18":
+        false, "hidden": false, "thumbnail": "", "subreddit_id": "t5_2qh72", "edited":
+        false, "link_flair_css_class": null, "author_flair_css_class": null, "downs":
+        12, "saved": false, "is_self": true, "permalink": "/r/Jokes/comments/16i52r/have_yourself_a_laugh_on_my_cake_day/",
+        "name": "t3_16i52r", "created": 1358133335.0, "url": "http://www.reddit.com/r/Jokes/comments/16i52r/have_yourself_a_laugh_on_my_cake_day/",
+        "author_flair_text": null, "author": "9ipsykin9", "created_utc": 1358104535.0,
+        "media": null, "num_reports": null, "ups": 45}}, {"kind": "t3", "data": {"domain":
+        "self.Jokes", "banned_by": null, "media_embed": {}, "subreddit": "Jokes",
+        "selftext_html": "&lt;!-- SC_OFF --&gt;&lt;div class=\"md\"&gt;&lt;p&gt;Put
+        it in the oven at three fifty until it&amp;#39;s Bill Withers.&lt;/p&gt;\n&lt;/div&gt;&lt;!--
+        SC_ON --&gt;", "selftext": "Put it in the oven at three fifty until it''s
+        Bill Withers.", "likes": null, "link_flair_text": null, "id": "16icxx", "clicked":
+        false, "title": "How do you make a duck into a soul singer?", "num_comments":
+        2, "score": 17, "approved_by": null, "over_18": false, "hidden": false, "thumbnail":
+        "", "subreddit_id": "t5_2qh72", "edited": false, "link_flair_css_class": null,
+        "author_flair_css_class": null, "downs": 7, "saved": false, "is_self": true,
+        "permalink": "/r/Jokes/comments/16icxx/how_do_you_make_a_duck_into_a_soul_singer/",
+        "name": "t3_16icxx", "created": 1358140258.0, "url": "http://www.reddit.com/r/Jokes/comments/16icxx/how_do_you_make_a_duck_into_a_soul_singer/",
+        "author_flair_text": null, "author": "hi_in_Humboldt", "created_utc": 1358111458.0,
+        "media": null, "num_reports": null, "ups": 24}}, {"kind": "t3", "data": {"domain":
+        "self.Jokes", "banned_by": null, "media_embed": {}, "subreddit": "Jokes",
+        "selftext_html": "&lt;!-- SC_OFF --&gt;&lt;div class=\"md\"&gt;&lt;p&gt;He
+        was too far out, man&lt;/p&gt;\n&lt;/div&gt;&lt;!-- SC_ON --&gt;", "selftext":
+        "He was too far out, man", "likes": null, "link_flair_text": null, "id": "16i1hi",
+        "clicked": false, "title": "Why couldn''t the lifeguard save the hippie?",
+        "num_comments": 1, "score": 34, "approved_by": null, "over_18": false, "hidden":
+        false, "thumbnail": "", "subreddit_id": "t5_2qh72", "edited": false, "link_flair_css_class":
+        null, "author_flair_css_class": null, "downs": 9, "saved": false, "is_self":
+        true, "permalink": "/r/Jokes/comments/16i1hi/why_couldnt_the_lifeguard_save_the_hippie/",
+        "name": "t3_16i1hi", "created": 1358130129.0, "url": "http://www.reddit.com/r/Jokes/comments/16i1hi/why_couldnt_the_lifeguard_save_the_hippie/",
+        "author_flair_text": null, "author": "supertoasty", "created_utc": 1358101329.0,
+        "media": null, "num_reports": null, "ups": 43}}, {"kind": "t3", "data": {"domain":
+        "self.Jokes", "banned_by": null, "media_embed": {}, "subreddit": "Jokes",
+        "selftext_html": "&lt;!-- SC_OFF --&gt;&lt;div class=\"md\"&gt;&lt;p&gt;A
+        bunch of construction workers are wording on a building site, when one of
+        them falls from the top floor and dies on the spot.\nThe other workers draw
+        straws to find out who has to tell his wife. Jack loses and heads off.&lt;/p&gt;\n\n&lt;p&gt;One
+        hour later, he returns with a big smile and a case of beer.\nThe other workers
+        are surprised: I thought you would tell Bobs wife that he had died?&lt;/p&gt;\n\n&lt;p&gt;Jack:
+        I did!\nOther guy: so where did you get the beer?\nJack: well, I went to his
+        house, rang the doorbell, and when his wife answered, I asked: are you the
+        widow Jones? To which she said: well, yes and no, i&amp;#39;m called Jones,
+        but i&amp;#39;m not a widow. Them I said: No? I bet you a case of beer you
+        are!&lt;/p&gt;\n&lt;/div&gt;&lt;!-- SC_ON --&gt;", "selftext": "A bunch of
+        construction workers are wording on a building site, when one of them falls
+        from the top floor and dies on the spot.\nThe other workers draw straws to
+        find out who has to tell his wife. Jack loses and heads off.\n\nOne hour later,
+        he returns with a big smile and a case of beer.\nThe other workers are surprised:
+        I thought you would tell Bobs wife that he had died?\n\nJack: I did!\nOther
+        guy: so where did you get the beer?\nJack: well, I went to his house, rang
+        the doorbell, and when his wife answered, I asked: are you the widow Jones?
+        To which she said: well, yes and no, i''m called Jones, but i''m not a widow.
+        Them I said: No? I bet you a case of beer you are!", "likes": null, "link_flair_text":
+        null, "id": "16hzg4", "clicked": false, "title": "The dead construction worker",
+        "num_comments": 3, "score": 31, "approved_by": null, "over_18": false, "hidden":
+        false, "thumbnail": "", "subreddit_id": "t5_2qh72", "edited": false, "link_flair_css_class":
+        null, "author_flair_css_class": null, "downs": 12, "saved": false, "is_self":
+        true, "permalink": "/r/Jokes/comments/16hzg4/the_dead_construction_worker/",
+        "name": "t3_16hzg4", "created": 1358099473.0, "url": "http://www.reddit.com/r/Jokes/comments/16hzg4/the_dead_construction_worker/",
+        "author_flair_text": null, "author": "sirwine", "created_utc": 1358099473.0,
+        "media": null, "num_reports": null, "ups": 43}}, {"kind": "t3", "data": {"domain":
+        "self.Jokes", "banned_by": null, "media_embed": {}, "subreddit": "Jokes",
+        "selftext_html": "&lt;!-- SC_OFF --&gt;&lt;div class=\"md\"&gt;&lt;p&gt;A
+        wind gust catches the rug and pulls her over the side.  She starts to say
+        a prayer as she plummets to certain death, when all of a sudden a guy on the
+        25th floor sees her and catches her.&lt;/p&gt;\n\n&lt;p&gt;She is amazed and
+        about to profusely thank the guy, when he says, &amp;quot;Do you suck?&amp;quot;  She
+        is stunned and says, &amp;quot;What???&amp;quot;  He repeats, &amp;quot;Do
+        you suck?&amp;quot;  She realizes he expects a blowjob for catching her and
+        says, &amp;quot;No!&amp;quot;   The guy drops her.&lt;/p&gt;\n\n&lt;p&gt;She
+        falls another 5 floors and another guy catches her.  He asks, &amp;quot;Do
+        you fuck?&amp;quot;  Again she says no, and he drops her.&lt;/p&gt;\n\n&lt;p&gt;She
+        then falls all the way to the 10th floor, and is caught by a third guy.  Realizing
+        she is going to die - she yells at the guy, &amp;quot;I suck! I fuck!&amp;quot;&lt;/p&gt;\n\n&lt;p&gt;The
+        guy looks at her, says, &amp;quot;Whore!&amp;quot; and drops her.&lt;/p&gt;\n&lt;/div&gt;&lt;!--
+        SC_ON --&gt;", "selftext": "A wind gust catches the rug and pulls her over
+        the side.  She starts to say a prayer as she plummets to certain death, when
+        all of a sudden a guy on the 25th floor sees her and catches her.\n\nShe is
+        amazed and about to profusely thank the guy, when he says, \"Do you suck?\"  She
+        is stunned and says, \"What???\"  He repeats, \"Do you suck?\"  She realizes
+        he expects a blowjob for catching her and says, \"No!\"   The guy drops her.\n\nShe
+        falls another 5 floors and another guy catches her.  He asks, \"Do you fuck?\"  Again
+        she says no, and he drops her.\n\nShe then falls all the way to the 10th floor,
+        and is caught by a third guy.  Realizing she is going to die - she yells at
+        the guy, \"I suck! I fuck!\"\n\nThe guy looks at her, says, \"Whore!\" and
+        drops her.", "likes": null, "link_flair_text": null, "id": "16ila9", "clicked":
+        false, "title": "A lady who lives on the 30th floor of a highrise is shaking
+        her rugs out on the balcony.", "num_comments": 0, "score": 11, "approved_by":
+        null, "over_18": false, "hidden": false, "thumbnail": "", "subreddit_id":
+        "t5_2qh72", "edited": false, "link_flair_css_class": null, "author_flair_css_class":
+        null, "downs": 2, "saved": false, "is_self": true, "permalink": "/r/Jokes/comments/16ila9/a_lady_who_lives_on_the_30th_floor_of_a_highrise/",
+        "name": "t3_16ila9", "created": 1358147509.0, "url": "http://www.reddit.com/r/Jokes/comments/16ila9/a_lady_who_lives_on_the_30th_floor_of_a_highrise/",
+        "author_flair_text": "Top Submitter", "author": "edfitz83", "created_utc":
+        1358118709.0, "media": null, "num_reports": null, "ups": 13}}, {"kind": "t3",
+        "data": {"domain": "self.Jokes", "banned_by": null, "media_embed": {}, "subreddit":
+        "Jokes", "selftext_html": "&lt;!-- SC_OFF --&gt;&lt;div class=\"md\"&gt;&lt;p&gt;It&amp;#39;s
+        actually the other way round.&lt;/p&gt;\n&lt;/div&gt;&lt;!-- SC_ON --&gt;",
+        "selftext": "It''s actually the other way round.", "likes": null, "link_flair_text":
+        null, "id": "16i7ek", "clicked": false, "title": "People assume I have a small
+        penis because I have a  Ferrari.", "num_comments": 2, "score": 17, "approved_by":
+        null, "over_18": false, "hidden": false, "thumbnail": "", "subreddit_id":
+        "t5_2qh72", "edited": false, "link_flair_css_class": null, "author_flair_css_class":
+        null, "downs": 5, "saved": false, "is_self": true, "permalink": "/r/Jokes/comments/16i7ek/people_assume_i_have_a_small_penis_because_i_have/",
+        "name": "t3_16i7ek", "created": 1358135340.0, "url": "http://www.reddit.com/r/Jokes/comments/16i7ek/people_assume_i_have_a_small_penis_because_i_have/",
+        "author_flair_text": null, "author": "HonoraryMancunian", "created_utc": 1358106540.0,
+        "media": null, "num_reports": null, "ups": 22}}, {"kind": "t3", "data": {"domain":
+        "self.Jokes", "banned_by": null, "media_embed": {}, "subreddit": "Jokes",
+        "selftext_html": "&lt;!-- SC_OFF --&gt;&lt;div class=\"md\"&gt;&lt;p&gt;The
+        farmboy sees the new neighbor has a daughter his age.  Their eyes meet, and
+        he is immediately in love.  He goes up and asks her to borrow a can of oil,
+        and she says, &amp;quot;Sure - follow me,&amp;quot; and she walks toward the
+        barn, swaying her hips more than normal.&lt;/p&gt;\n\n&lt;p&gt;When they turn
+        the corner, they see a bull screwing one of the cows.  The farmboy steps close
+        to the girl, looks her in the eye, and says softly, &amp;quot;I&amp;#39;d
+        really like to do that, too.&amp;quot;&lt;/p&gt;\n\n&lt;p&gt;The girl smiles,
+        giggles a little, and responds, &amp;quot;Sure.  I&amp;#39;ll grab you a stepstool
+        so you can reach.&amp;quot;&lt;/p&gt;\n&lt;/div&gt;&lt;!-- SC_ON --&gt;",
+        "selftext": "The farmboy sees the new neighbor has a daughter his age.  Their
+        eyes meet, and he is immediately in love.  He goes up and asks her to borrow
+        a can of oil, and she says, \"Sure - follow me,\" and she walks toward the
+        barn, swaying her hips more than normal.\n\nWhen they turn the corner, they
+        see a bull screwing one of the cows.  The farmboy steps close to the girl,
+        looks her in the eye, and says softly, \"I''d really like to do that, too.\"\n\nThe
+        girl smiles, giggles a little, and responds, \"Sure.  I''ll grab you a stepstool
+        so you can reach.\"", "likes": null, "link_flair_text": null, "id": "16igpn",
+        "clicked": false, "title": "A farmer sends his young son to his new neighbor''s
+        farm to borrow some oil.", "num_comments": 2, "score": 11, "approved_by":
+        null, "over_18": false, "hidden": false, "thumbnail": "", "subreddit_id":
+        "t5_2qh72", "edited": false, "link_flair_css_class": null, "author_flair_css_class":
+        null, "downs": 2, "saved": false, "is_self": true, "permalink": "/r/Jokes/comments/16igpn/a_farmer_sends_his_young_son_to_his_new_neighbors/",
+        "name": "t3_16igpn", "created": 1358143561.0, "url": "http://www.reddit.com/r/Jokes/comments/16igpn/a_farmer_sends_his_young_son_to_his_new_neighbors/",
+        "author_flair_text": "Top Submitter", "author": "edfitz83", "created_utc":
+        1358114761.0, "media": null, "num_reports": null, "ups": 13}}, {"kind": "t3",
+        "data": {"domain": "self.Jokes", "banned_by": null, "media_embed": {}, "subreddit":
+        "Jokes", "selftext_html": "&lt;!-- SC_OFF --&gt;&lt;div class=\"md\"&gt;&lt;p&gt;He
+        walks in, and amidst his frustration, he exclaims, &amp;quot;Lawyers are such
+        assholes!&amp;quot;&lt;/p&gt;\n\n&lt;p&gt;Another person shouts out, &amp;quot;Hey!
+        I resent that statement!&amp;quot;&lt;/p&gt;\n\n&lt;p&gt;The man responds,
+        &amp;quot;Why? Are you a lawyer?&amp;quot;&lt;/p&gt;\n\n&lt;p&gt;The guy says,
+        &amp;quot;No! I&amp;#39;m an asshole!&amp;quot;&lt;/p&gt;\n&lt;/div&gt;&lt;!--
+        SC_ON --&gt;", "selftext": "He walks in, and amidst his frustration, he exclaims,
+        \"Lawyers are such assholes!\"\n\nAnother person shouts out, \"Hey! I resent
+        that statement!\"\n\nThe man responds, \"Why? Are you a lawyer?\"\n\nThe guy
+        says, \"No! I''m an asshole!\"", "likes": null, "link_flair_text": null, "id":
+        "16h9t9", "clicked": false, "title": "A frustrated man who''s being sued goes
+        to the bar...", "num_comments": 4, "score": 188, "approved_by": null, "over_18":
+        false, "hidden": false, "thumbnail": "", "subreddit_id": "t5_2qh72", "edited":
+        false, "link_flair_css_class": null, "author_flair_css_class": null, "downs":
+        58, "saved": false, "is_self": true, "permalink": "/r/Jokes/comments/16h9t9/a_frustrated_man_whos_being_sued_goes_to_the_bar/",
+        "name": "t3_16h9t9", "created": 1358085218.0, "url": "http://www.reddit.com/r/Jokes/comments/16h9t9/a_frustrated_man_whos_being_sued_goes_to_the_bar/",
+        "author_flair_text": null, "author": "Umkazto", "created_utc": 1358056418.0,
+        "media": null, "num_reports": null, "ups": 246}}, {"kind": "t3", "data": {"domain":
+        "self.Jokes", "banned_by": null, "media_embed": {}, "subreddit": "Jokes",
+        "selftext_html": "&lt;!-- SC_OFF --&gt;&lt;div class=\"md\"&gt;&lt;p&gt;The
+        reporter said, &amp;quot;You look terrible - what happened to you?&amp;quot;&lt;/p&gt;\n\n&lt;p&gt;The
+        player said, &amp;quot;I pulled a groin.&amp;quot;&lt;/p&gt;\n\n&lt;p&gt;The
+        reporter asks, &amp;quot;You have two black eyes - how did that happen if
+        you pulled a groin?&amp;quot;&lt;/p&gt;\n\n&lt;p&gt;The guy responds, &amp;quot;Not
+        mine - someone else&amp;#39;s.&amp;quot;&lt;/p&gt;\n&lt;/div&gt;&lt;!-- SC_ON
+        --&gt;", "selftext": "The reporter said, \"You look terrible - what happened
+        to you?\"\n\nThe player said, \"I pulled a groin.\"\n\nThe reporter asks,
+        \"You have two black eyes - how did that happen if you pulled a groin?\"\n\nThe
+        guy responds, \"Not mine - someone else''s.\"", "likes": null, "link_flair_text":
+        null, "id": "16iiw5", "clicked": false, "title": "After the Seahawks game,
+        a reporter went to interview a banged-up player, who had two black eyes.",
+        "num_comments": 0, "score": 7, "approved_by": null, "over_18": false, "hidden":
+        false, "thumbnail": "", "subreddit_id": "t5_2qh72", "edited": false, "link_flair_css_class":
+        null, "author_flair_css_class": null, "downs": 2, "saved": false, "is_self":
+        true, "permalink": "/r/Jokes/comments/16iiw5/after_the_seahawks_game_a_reporter_went_to/",
+        "name": "t3_16iiw5", "created": 1358145452.0, "url": "http://www.reddit.com/r/Jokes/comments/16iiw5/after_the_seahawks_game_a_reporter_went_to/",
+        "author_flair_text": "Top Submitter", "author": "edfitz83", "created_utc":
+        1358116652.0, "media": null, "num_reports": null, "ups": 9}}, {"kind": "t3",
+        "data": {"domain": "self.Jokes", "banned_by": null, "media_embed": {}, "subreddit":
+        "Jokes", "selftext_html": "&lt;!-- SC_OFF --&gt;&lt;div class=\"md\"&gt;&lt;p&gt;Names.&lt;/p&gt;\n&lt;/div&gt;&lt;!--
+        SC_ON --&gt;", "selftext": "Names.", "likes": null, "link_flair_text": null,
+        "id": "16h3ki", "clicked": false, "title": "What do you call a fat kid with
+        3 teeth and a lazy eye?", "num_comments": 24, "score": 201, "approved_by":
+        null, "over_18": false, "hidden": false, "thumbnail": "", "subreddit_id":
+        "t5_2qh72", "edited": false, "link_flair_css_class": null, "author_flair_css_class":
+        null, "downs": 160, "saved": false, "is_self": true, "permalink": "/r/Jokes/comments/16h3ki/what_do_you_call_a_fat_kid_with_3_teeth_and_a/",
+        "name": "t3_16h3ki", "created": 1358078620.0, "url": "http://www.reddit.com/r/Jokes/comments/16h3ki/what_do_you_call_a_fat_kid_with_3_teeth_and_a/",
+        "author_flair_text": null, "author": "Nebz604", "created_utc": 1358049820.0,
+        "media": null, "num_reports": null, "ups": 361}}, {"kind": "t3", "data": {"domain":
+        "self.Jokes", "banned_by": null, "media_embed": {}, "subreddit": "Jokes",
+        "selftext_html": "&lt;!-- SC_OFF --&gt;&lt;div class=\"md\"&gt;&lt;p&gt;Chap
+        decides to to join a monastery. As a novice he is only allowed to speak two
+        words to the prior, once every 7 years.  &lt;/p&gt;\n\n&lt;p&gt;The first
+        seven years go by and he whispers, &amp;quot;Cold floors...&amp;quot;&lt;/p&gt;\n\n&lt;p&gt;The
+        next seven years go by and he whispers, &amp;quot;Bad food...&amp;quot;&lt;/p&gt;\n\n&lt;p&gt;Seven
+        more years go by and he croaks, &amp;quot;I quit!&amp;quot;&lt;/p&gt;\n\n&lt;p&gt;The
+        prior raises his eyebrows and replies, &amp;quot;I&amp;#39;m not surprised.  You&amp;#39;ve
+        done nothing but complain since you joined.&amp;quot;&lt;/p&gt;\n&lt;/div&gt;&lt;!--
+        SC_ON --&gt;", "selftext": "Chap decides to to join a monastery. As a novice
+        he is only allowed to speak two words to the prior, once every 7 years.  \n\nThe
+        first seven years go by and he whispers, \"Cold floors...\"\n\nThe next seven
+        years go by and he whispers, \"Bad food...\"\n\nSeven more years go by and
+        he croaks, \"I quit!\"\n\nThe prior raises his eyebrows and replies, \"I''m
+        not surprised.  You''ve done nothing but complain since you joined.\"", "likes":
+        null, "link_flair_text": null, "id": "16hm42", "clicked": false, "title":
+        "Vow of Silence", "num_comments": 3, "score": 42, "approved_by": null, "over_18":
+        false, "hidden": false, "thumbnail": "", "subreddit_id": "t5_2qh72", "edited":
+        false, "link_flair_css_class": null, "author_flair_css_class": null, "downs":
+        15, "saved": false, "is_self": true, "permalink": "/r/Jokes/comments/16hm42/vow_of_silence/",
+        "name": "t3_16hm42", "created": 1358108327.0, "url": "http://www.reddit.com/r/Jokes/comments/16hm42/vow_of_silence/",
+        "author_flair_text": null, "author": "vinemadness", "created_utc": 1358079527.0,
+        "media": null, "num_reports": null, "ups": 57}}, {"kind": "t3", "data": {"domain":
+        "self.Jokes", "banned_by": null, "media_embed": {}, "subreddit": "Jokes",
+        "selftext_html": "&lt;!-- SC_OFF --&gt;&lt;div class=\"md\"&gt;&lt;p&gt;His
+        father replies: &amp;quot;Forty dollars?! What do you need thirty dollars
+        for?!&amp;quot;&lt;/p&gt;\n&lt;/div&gt;&lt;!-- SC_ON --&gt;", "selftext":
+        "His father replies: \"Forty dollars?! What do you need thirty dollars for?!\"",
+        "likes": null, "link_flair_text": null, "id": "16gz0o", "clicked": false,
+        "title": "Jewish kid asks his father for $50 ...", "num_comments": 16, "score":
+        219, "approved_by": null, "over_18": false, "hidden": false, "thumbnail":
+        "", "subreddit_id": "t5_2qh72", "edited": false, "link_flair_css_class": null,
+        "author_flair_css_class": null, "downs": 146, "saved": false, "is_self": true,
+        "permalink": "/r/Jokes/comments/16gz0o/jewish_kid_asks_his_father_for_50/",
+        "name": "t3_16gz0o", "created": 1358074086.0, "url": "http://www.reddit.com/r/Jokes/comments/16gz0o/jewish_kid_asks_his_father_for_50/",
+        "author_flair_text": null, "author": "Glitchsky", "created_utc": 1358045286.0,
+        "media": null, "num_reports": null, "ups": 365}}, {"kind": "t3", "data": {"domain":
+        "self.Jokes", "banned_by": null, "media_embed": {}, "subreddit": "Jokes",
+        "selftext_html": "&lt;!-- SC_OFF --&gt;&lt;div class=\"md\"&gt;&lt;p&gt;they&amp;#39;re
+        just fucking immature assholes&lt;/p&gt;\n&lt;/div&gt;&lt;!-- SC_ON --&gt;",
+        "selftext": "they''re just fucking immature assholes", "likes": null, "link_flair_text":
+        null, "id": "16io2n", "clicked": false, "title": "Why are pedophiles so annoying?",
+        "num_comments": 2, "score": 4, "approved_by": null, "over_18": false, "hidden":
+        false, "thumbnail": "", "subreddit_id": "t5_2qh72", "edited": false, "link_flair_css_class":
+        null, "author_flair_css_class": null, "downs": 3, "saved": false, "is_self":
+        true, "permalink": "/r/Jokes/comments/16io2n/why_are_pedophiles_so_annoying/",
+        "name": "t3_16io2n", "created": 1358149917.0, "url": "http://www.reddit.com/r/Jokes/comments/16io2n/why_are_pedophiles_so_annoying/",
+        "author_flair_text": null, "author": "PrimeIntellect", "created_utc": 1358121117.0,
+        "media": null, "num_reports": null, "ups": 7}}, {"kind": "t3", "data": {"domain":
+        "self.Jokes", "banned_by": null, "media_embed": {}, "subreddit": "Jokes",
+        "selftext_html": "&lt;!-- SC_OFF --&gt;&lt;div class=\"md\"&gt;&lt;p&gt;Three
+        guys are out hunting when they come across a fence. First one hops over the
+        fence, second one hops over the fence, third one hops over the fence and BAM
+        accidentally shoots himself in the foot. The other too carry him back into
+        town and drop him off at the doctor, then decide to go to the local bar so
+        the day isn&amp;#39;t a complete waste.&lt;/p&gt;\n\n&lt;p&gt;After aN x-ray
+        and exam the doctor comes in and says:  &lt;/p&gt;\n\n&lt;p&gt;Doctor: Well
+        you are pretty lucky as it looks like no real permanent damage will be done
+        but we are going to have to give you some pain medication and perform a minor
+        operation.   &lt;/p&gt;\n\n&lt;p&gt;Hunter: Na doc I don&amp;#39;t need any
+        pain medication.  &lt;/p&gt;\n\n&lt;p&gt;Doctor: I don&amp;#39;t think you
+        understand I&amp;#39;m going to be removing pieces of bone and moving other
+        pieces around, it is going to be extremely painful.  &lt;/p&gt;\n\n&lt;p&gt;Hunter:
+        Aww this doesn&amp;#39;t hurt that bad, not even close to the worst pain I&amp;#39;ve
+        felt.  &lt;/p&gt;\n\n&lt;p&gt;Doctor: Geezus, what was the worst pain you
+        have ever felt?&lt;/p&gt;\n\n&lt;p&gt;Hunter: Well to tell you about the worst
+        pain I first have to tell you about the second worst pain I&amp;#39;ve ever
+        felt. I was out hunting with these two yahoos when I felt the urge to take
+        a dump so I found a bush nearby, bent over to do my business and a bear trap
+        clamped onto my balls.  &lt;/p&gt;\n\n&lt;p&gt;Doctor: Holy crap! Damn that
+        must of hurt, I&amp;#39;m afraid to ask now but what was the worst pain then?  &lt;/p&gt;\n\n&lt;p&gt;Hunter:
+        When I hit the end of the chain attached to the trap. &lt;/p&gt;\n&lt;/div&gt;&lt;!--
+        SC_ON --&gt;", "selftext": "Three guys are out hunting when they come across
+        a fence. First one hops over the fence, second one hops over the fence, third
+        one hops over the fence and BAM accidentally shoots himself in the foot. The
+        other too carry him back into town and drop him off at the doctor, then decide
+        to go to the local bar so the day isn''t a complete waste.\n\nAfter aN x-ray
+        and exam the doctor comes in and says:  \n\nDoctor: Well you are pretty lucky
+        as it looks like no real permanent damage will be done but we are going to
+        have to give you some pain medication and perform a minor operation.   \n\nHunter:
+        Na doc I don''t need any pain medication.  \n\nDoctor: I don''t think you
+        understand I''m going to be removing pieces of bone and moving other pieces
+        around, it is going to be extremely painful.  \n\nHunter: Aww this doesn''t
+        hurt that bad, not even close to the worst pain I''ve felt.  \n\nDoctor: Geezus,
+        what was the worst pain you have ever felt?\n\nHunter: Well to tell you about
+        the worst pain I first have to tell you about the second worst pain I''ve
+        ever felt. I was out hunting with these two yahoos when I felt the urge to
+        take a dump so I found a bush nearby, bent over to do my business and a bear
+        trap clamped onto my balls.  \n  \nDoctor: Holy crap! Damn that must of hurt,
+        I''m afraid to ask now but what was the worst pain then?  \n  \nHunter: When
+        I hit the end of the chain attached to the trap. ", "likes": null, "link_flair_text":
+        null, "id": "16i5wx", "clicked": false, "title": "Three guys are out hunting",
+        "num_comments": 4, "score": 10, "approved_by": null, "over_18": false, "hidden":
+        false, "thumbnail": "", "subreddit_id": "t5_2qh72", "edited": false, "link_flair_css_class":
+        null, "author_flair_css_class": null, "downs": 1, "saved": false, "is_self":
+        true, "permalink": "/r/Jokes/comments/16i5wx/three_guys_are_out_hunting/",
+        "name": "t3_16i5wx", "created": 1358134064.0, "url": "http://www.reddit.com/r/Jokes/comments/16i5wx/three_guys_are_out_hunting/",
+        "author_flair_text": null, "author": "defaultnullroute", "created_utc": 1358105264.0,
+        "media": null, "num_reports": null, "ups": 11}}, {"kind": "t3", "data": {"domain":
+        "self.Jokes", "banned_by": null, "media_embed": {}, "subreddit": "Jokes",
+        "selftext_html": "&lt;!-- SC_OFF --&gt;&lt;div class=\"md\"&gt;&lt;p&gt;a
+        shower&lt;/p&gt;\n&lt;/div&gt;&lt;!-- SC_ON --&gt;", "selftext": "a shower",
+        "likes": null, "link_flair_text": null, "id": "16icyr", "clicked": false,
+        "title": "what\"s the difference between tuna and chicken?", "num_comments":
+        2, "score": 7, "approved_by": null, "over_18": false, "hidden": false, "thumbnail":
+        "", "subreddit_id": "t5_2qh72", "edited": false, "link_flair_css_class": null,
+        "author_flair_css_class": null, "downs": 5, "saved": false, "is_self": true,
+        "permalink": "/r/Jokes/comments/16icyr/whats_the_difference_between_tuna_and_chicken/",
+        "name": "t3_16icyr", "created": 1358140276.0, "url": "http://www.reddit.com/r/Jokes/comments/16icyr/whats_the_difference_between_tuna_and_chicken/",
+        "author_flair_text": null, "author": "Chowderhead1", "created_utc": 1358111476.0,
+        "media": null, "num_reports": null, "ups": 12}}, {"kind": "t3", "data": {"domain":
+        "self.Jokes", "banned_by": null, "media_embed": {}, "subreddit": "Jokes",
+        "selftext_html": "&lt;!-- SC_OFF --&gt;&lt;div class=\"md\"&gt;&lt;p&gt;How
+        many elephants can you fit into a Matterbooboo?&lt;/p&gt;\n\n&lt;p&gt;&amp;quot;What&amp;#39;s
+        a Matterbooboo?&amp;quot;&lt;/p&gt;\n\n&lt;p&gt;Nothing Yogi. &lt;/p&gt;\n&lt;/div&gt;&lt;!--
+        SC_ON --&gt;", "selftext": "How many elephants can you fit into a Matterbooboo?\n\n\"What''s
+        a Matterbooboo?\"\n\nNothing Yogi. ", "likes": null, "link_flair_text": null,
+        "id": "16hw3s", "clicked": false, "title": "How many?", "num_comments": 0,
+        "score": 13, "approved_by": null, "over_18": false, "hidden": false, "thumbnail":
+        "", "subreddit_id": "t5_2qh72", "edited": false, "link_flair_css_class": null,
+        "author_flair_css_class": null, "downs": 5, "saved": false, "is_self": true,
+        "permalink": "/r/Jokes/comments/16hw3s/how_many/", "name": "t3_16hw3s", "created":
+        1358124867.0, "url": "http://www.reddit.com/r/Jokes/comments/16hw3s/how_many/",
+        "author_flair_text": null, "author": "5nakedoc", "created_utc": 1358096067.0,
+        "media": null, "num_reports": null, "ups": 18}}, {"kind": "t3", "data": {"domain":
+        "self.Jokes", "banned_by": null, "media_embed": {}, "subreddit": "Jokes",
+        "selftext_html": "&lt;!-- SC_OFF --&gt;&lt;div class=\"md\"&gt;&lt;p&gt;He
+        heard the snow blower was coming.&lt;/p&gt;\n&lt;/div&gt;&lt;!-- SC_ON --&gt;",
+        "selftext": "He heard the snow blower was coming.", "likes": null, "link_flair_text":
+        null, "id": "16fud7", "clicked": false, "title": "Why did the snowman take
+        his pants off?", "num_comments": 52, "score": 1038, "approved_by": null, "over_18":
+        false, "hidden": false, "thumbnail": "", "subreddit_id": "t5_2qh72", "edited":
+        false, "link_flair_css_class": null, "author_flair_css_class": null, "downs":
+        878, "saved": false, "is_self": true, "permalink": "/r/Jokes/comments/16fud7/why_did_the_snowman_take_his_pants_off/",
+        "name": "t3_16fud7", "created": 1358034878.0, "url": "http://www.reddit.com/r/Jokes/comments/16fud7/why_did_the_snowman_take_his_pants_off/",
+        "author_flair_text": null, "author": "rock_block", "created_utc": 1358006078.0,
+        "media": null, "num_reports": null, "ups": 1916}}, {"kind": "t3", "data":
+        {"domain": "self.Jokes", "banned_by": null, "media_embed": {}, "subreddit":
+        "Jokes", "selftext_html": "&lt;!-- SC_OFF --&gt;&lt;div class=\"md\"&gt;&lt;p&gt;so
+        a man is on a long road trip on his way to an important business meeting upstate.
+        he&amp;#39;s been driving for hours through desolate farmland as he starts
+        to notice a growing hunger pang in the pit of his stomach. he continues driving
+        in hopes of finding a rest stop or a diner where he can stop for a bite, but
+        as he presses on, he finds only more farmland. as the hours pass and his hunger
+        grows, the man notices a small roadside stand manned by a single farmer.&lt;/p&gt;\n\n&lt;p&gt;he
+        pulls over and asks the farmer if he&amp;#39;s selling food, to which the
+        farmer replies &amp;quot;yes sir, i&amp;#39;m selling apples.&amp;quot; the
+        man asks how much and the farmer replies &amp;quot;50$ an apple.&amp;quot;
+        the man replies &amp;quot;thats outrageous! you think you can take advantage
+        of weary travelers like that just because you have the only food for miles?
+        this is highway robbery!&amp;quot; the farmer had obviously heard these accusations
+        before and calmly explains, &amp;quot;but sir, these are magic apples. if
+        you bite into one side, they taste like creamy peanut butter, and if you bite
+        into the other side, they taste like rich grape jelly.&amp;quot; doubtful
+        of the old farmer, the man says &amp;quot;you must be off your rocker.&amp;quot;
+        so the farmer offers &amp;quot;go ahead and try one, and if i&amp;#39;m wrong
+        i&amp;#39;ll refund your 50$&amp;quot;&lt;/p&gt;\n\n&lt;p&gt;so the man hands
+        the farmer a 50 dollar bill and the farmer gives him an apple and he takes
+        a bite. to the mans bewilderment, one side tastes just like peanut butter,
+        and the other like jelly. the man exclaims &amp;quot;this is incredible. thats
+        the most delicious apple ive ever tasted! have you got anything else like
+        this?&amp;quot; the farmer says &amp;quot;oh, sure. ive got these apples here
+        for 100$ and they taste like mashed potatoes and pork gravy.&amp;quot; the
+        man is hesitant, but the farmer says &amp;quot;if im wrong, i&amp;#39;ll refund
+        your 100$&amp;quot; so the man hands him a 100$ bill and the farmer hands
+        him an apple. the man takes a bite of each side and is surprised to find one
+        side tasted like home cooked mashed potatoes, and the other like pork gravy.&lt;/p&gt;\n\n&lt;p&gt;the
+        man is blown away and asks the farmer if he has anything else like this. after
+        a pause the farmer says &amp;quot;well, i do have one other type of apple,
+        but these are gonna cost you 500$ an apple.&amp;quot; the man replies &amp;quot;thats
+        crazy, what could these apples possibly taste like to make them worth 500$?&amp;quot;
+        the farmer simply replies &amp;quot;pussy. the apples taste like pussy.&amp;quot;
+        the man hands the farmer 500$ in disbelief and says, now this i gotta try.&amp;quot;
+        the farmer hands the man his apple, the man takes a large bite and instantly
+        spits it out and vomits all over the side of the road. the man looks at the
+        elderly farmer and exclaims &amp;quot;what the hell? this apple tastes like
+        shit!&amp;quot; the farmer calmly replies, &amp;quot;turn it over.&amp;quot;&lt;/p&gt;\n&lt;/div&gt;&lt;!--
+        SC_ON --&gt;", "selftext": "so a man is on a long road trip on his way to
+        an important business meeting upstate. he''s been driving for hours through
+        desolate farmland as he starts to notice a growing hunger pang in the pit
+        of his stomach. he continues driving in hopes of finding a rest stop or a
+        diner where he can stop for a bite, but as he presses on, he finds only more
+        farmland. as the hours pass and his hunger grows, the man notices a small
+        roadside stand manned by a single farmer.\n\n he pulls over and asks the farmer
+        if he''s selling food, to which the farmer replies \"yes sir, i''m selling
+        apples.\" the man asks how much and the farmer replies \"50$ an apple.\" the
+        man replies \"thats outrageous! you think you can take advantage of weary
+        travelers like that just because you have the only food for miles? this is
+        highway robbery!\" the farmer had obviously heard these accusations before
+        and calmly explains, \"but sir, these are magic apples. if you bite into one
+        side, they taste like creamy peanut butter, and if you bite into the other
+        side, they taste like rich grape jelly.\" doubtful of the old farmer, the
+        man says \"you must be off your rocker.\" so the farmer offers \"go ahead
+        and try one, and if i''m wrong i''ll refund your 50$\"\n\nso the man hands
+        the farmer a 50 dollar bill and the farmer gives him an apple and he takes
+        a bite. to the mans bewilderment, one side tastes just like peanut butter,
+        and the other like jelly. the man exclaims \"this is incredible. thats the
+        most delicious apple ive ever tasted! have you got anything else like this?\"
+        the farmer says \"oh, sure. ive got these apples here for 100$ and they taste
+        like mashed potatoes and pork gravy.\" the man is hesitant, but the farmer
+        says \"if im wrong, i''ll refund your 100$\" so the man hands him a 100$ bill
+        and the farmer hands him an apple. the man takes a bite of each side and is
+        surprised to find one side tasted like home cooked mashed potatoes, and the
+        other like pork gravy.\n\nthe man is blown away and asks the farmer if he
+        has anything else like this. after a pause the farmer says \"well, i do have
+        one other type of apple, but these are gonna cost you 500$ an apple.\" the
+        man replies \"thats crazy, what could these apples possibly taste like to
+        make them worth 500$?\" the farmer simply replies \"pussy. the apples taste
+        like pussy.\" the man hands the farmer 500$ in disbelief and says, now this
+        i gotta try.\" the farmer hands the man his apple, the man takes a large bite
+        and instantly spits it out and vomits all over the side of the road. the man
+        looks at the elderly farmer and exclaims \"what the hell? this apple tastes
+        like shit!\" the farmer calmly replies, \"turn it over.\"", "likes": null,
+        "link_flair_text": null, "id": "16ha2u", "clicked": false, "title": "magic
+        apples", "num_comments": 7, "score": 65, "approved_by": null, "over_18": false,
+        "hidden": false, "thumbnail": "", "subreddit_id": "t5_2qh72", "edited": false,
+        "link_flair_css_class": null, "author_flair_css_class": null, "downs": 18,
+        "saved": false, "is_self": true, "permalink": "/r/Jokes/comments/16ha2u/magic_apples/",
+        "name": "t3_16ha2u", "created": 1358085541.0, "url": "http://www.reddit.com/r/Jokes/comments/16ha2u/magic_apples/",
+        "author_flair_text": null, "author": "The-Sofa-King", "created_utc": 1358056741.0,
+        "media": null, "num_reports": null, "ups": 83}}, {"kind": "t3", "data": {"domain":
+        "self.Jokes", "banned_by": null, "media_embed": {}, "subreddit": "Jokes",
+        "selftext_html": "&lt;!-- SC_OFF --&gt;&lt;div class=\"md\"&gt;&lt;p&gt;and
+        asks the driver to show him his driver&amp;#39;s license and open the trunk.\nIn
+        the trunk the cop finds 10 penguins. Really irritated the cop says: &amp;quot;Bring
+        them back to the zoo! This is cruelty!&amp;quot; The driver answers: &amp;quot;Sure.
+        I&amp;#39;m actually on my way to the zoo.&amp;quot;\nThe next day the cop
+        pulls the same car over and says that he wants to look in the trunk. So the
+        driver opens the trunk and there are the 10 penguins with bathing caps. So
+        the cop asks: &amp;quot;Why do they wear bathing caps and I told you to bring
+        them to the zoo!&amp;quot;\nDriver: &amp;quot;Yesterday we were at the zoo
+        and today we go to the swimming pool.&amp;quot;&lt;/p&gt;\n&lt;/div&gt;&lt;!--
+        SC_ON --&gt;", "selftext": "and asks the driver to show him his driver''s
+        license and open the trunk.\nIn the trunk the cop finds 10 penguins. Really
+        irritated the cop says: \"Bring them back to the zoo! This is cruelty!\" The
+        driver answers: \"Sure. I''m actually on my way to the zoo.\"\nThe next day
+        the cop pulls the same car over and says that he wants to look in the trunk.
+        So the driver opens the trunk and there are the 10 penguins with bathing caps.
+        So the cop asks: \"Why do they wear bathing caps and I told you to bring them
+        to the zoo!\"\nDriver: \"Yesterday we were at the zoo and today we go to the
+        swimming pool.\"", "likes": null, "link_flair_text": null, "id": "16hnil",
+        "clicked": false, "title": "A police officer stops a car...", "num_comments":
+        0, "score": 17, "approved_by": null, "over_18": false, "hidden": false, "thumbnail":
+        "", "subreddit_id": "t5_2qh72", "edited": false, "link_flair_css_class": null,
+        "author_flair_css_class": null, "downs": 17, "saved": false, "is_self": true,
+        "permalink": "/r/Jokes/comments/16hnil/a_police_officer_stops_a_car/", "name":
+        "t3_16hnil", "created": 1358111741.0, "url": "http://www.reddit.com/r/Jokes/comments/16hnil/a_police_officer_stops_a_car/",
+        "author_flair_text": null, "author": "ParksAndR", "created_utc": 1358082941.0,
+        "media": null, "num_reports": null, "ups": 34}}], "after": "t3_16hnil", "before":
+        null}}'
+    http_version: 
+  recorded_at: Mon, 14 Jan 2013 00:24:58 GMT
+recorded_with: VCR 2.4.0
