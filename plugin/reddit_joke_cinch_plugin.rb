@@ -1,3 +1,4 @@
+require 'cgi'
 require 'json'
 require 'open-uri'
 
@@ -30,7 +31,7 @@ module TurbotPlugins
       json_data = open('http://www.reddit.com/r/jokes.json').read
       unformatted_jokes = JSON.parse(json_data)['data']['children']
       unformatted_jokes.collect do |joke|
-        joke['data']['title'].gsub(/\.\.\.$/,'') + ' ' + joke['data']['selftext'].gsub(/^\.\.\./,'')
+        CGI.unescapeHTML(joke['data']['title'].gsub(/\.\.\.$/,'') + ' ' + joke['data']['selftext'].gsub(/^\.\.\./,''))
       end
     end
   end

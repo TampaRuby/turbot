@@ -1,3 +1,4 @@
+require 'cgi'
 require 'json'
 require 'open-uri'
 
@@ -22,7 +23,7 @@ module TurbotPlugins
 
     def quote
       json_data = open('http://api.icndb.com/jokes/random').read
-      JSON.parse(json_data)['value']['joke']
+      CGI.unescapeHTML(JSON.parse(json_data)['value']['joke'])
     end
   end
 end
