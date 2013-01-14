@@ -44,10 +44,7 @@ module TurbotPlugins
     end
 
     def sudoers
-      # Oh how I hate class variables but until we have storage I'm not sure
-      # what else to do. Unless there is only a single instance of a Plugin
-      # where we could just make this an instance variable
-      @@sudoers ||= Set.new
+      @sudoers ||= Set.new
     end
   end
 end
