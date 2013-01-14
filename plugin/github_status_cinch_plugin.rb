@@ -13,7 +13,7 @@ module TurbotPlugins
       m.reply ".github last message = Show latest manual status update for Github."
     end
 
-    timer 300, method: :status
+    timer 900, method: :status
     match /github status/, :method => :status
     def status(m=nil)
       data = get_json_data('https://status.github.com/api/status.json')
