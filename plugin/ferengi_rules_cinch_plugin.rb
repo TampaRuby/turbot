@@ -14,7 +14,7 @@ module TurbotPlugins
     end
 
     def random_rule
-      rules[rand(rules.length)]
+      rules.sample
     end
 
     def rules
