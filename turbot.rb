@@ -28,10 +28,6 @@ bot = Cinch::Bot.new do
   on :message, /^Open the pod bay doors/i do |m|
     m.reply "I'm sorry, Dave. I'm afraid I can't do that."
   end
-
-  on :message, /turbot/i do |m|
-    m.reply "Who me? (Type .help to see what I can do.)"
-  end
 end
 
 bot.start
