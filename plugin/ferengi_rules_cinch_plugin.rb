@@ -8,7 +8,7 @@ module TurbotPlugins
     end
 
     match /rules? of acquisition/i, method: :print_random_rule, prefix: PREFIX
-    match /(ferengi rule|money|profit|sale|discount|opportunity)/i, method: :print_random_rule, prefix: //
+    match /(ferengi( rule)|money|profit|sale|discount|opportunity)/i, method: :print_random_rule, prefix: PREFIX
     def print_random_rule(m)
       m.reply random_rule
     end

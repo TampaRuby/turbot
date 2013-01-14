@@ -1,4 +1,4 @@
-module TurbotPlugins::UrlHandler
+module UrlHandler
   class GenericHandler
     include Common
 

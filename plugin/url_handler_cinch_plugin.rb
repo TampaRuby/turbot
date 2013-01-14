@@ -10,14 +10,14 @@ require_relative 'url_handler/youtube_handler'
 require_relative 'url_handler/image_handler'
 require_relative 'url_handler/generic_handler'
 
-module TurbotPlugins::UrlHandler
-  class Processor
+module TurbotPlugins
+  class UrlHandler
     include Cinch::Plugin
 
     listen_to :channel
 
     def handlers
-      Handlers.handlers
+      ::UrlHandler::Handlers.handlers
     end
 
     def listen(m)

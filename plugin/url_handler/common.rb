@@ -4,7 +4,7 @@ require 'json'
 require 'open-uri'
 require 'mechanize'
 
-module TurbotPlugins::UrlHandler
+module UrlHandler
   module Handlers
     def self.handlers
       @handlers

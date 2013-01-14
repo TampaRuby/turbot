@@ -2,7 +2,7 @@ require 'spec_helper'
 
 require_relative '../../plugin/url_handler_cinch_plugin.rb'
 
-describe TurbotPlugins::UrlHandler::Processor do
+describe TurbotPlugins::UrlHandler do
   let(:standard_url_root)  {'https://twitter.com/'}
   let(:hashbang_url_root)  {standard_url_root + '#!/'}
   let(:seconds_in_a_day) {24 * 60 * 60}

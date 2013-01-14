@@ -16,7 +16,7 @@ module TurbotPlugins
 
     match /chuck norris$/i, method: :chuck_norris
     match /chuck says$/i, method: :chuck_norris
-    match /chuck/i, method: :chuck_norris, :prefix => //
+    match /chuck$/i, method: :chuck_norris
     def chuck_norris(m)
       m.reply quote
     end
