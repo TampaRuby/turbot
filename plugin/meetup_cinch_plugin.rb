@@ -6,12 +6,11 @@ require 'rmeetup'
 module TurbotPlugins
   class Meetup
     include Cinch::Plugin
+
     set :prefix, PREFIX
 
-    match /help/, method: :help
-    def help(m)
-      m.reply ".nextmeetup = Get the next meetup info"
-    end
+    handler = Handler.new('Meetup', '.next_meetup', 'Get the next meetup information.')
+    PluginHandler.add_handler(handler)
 
     match /nextmeetup/, method: :nextmeetup
     def nextmeetup(m)

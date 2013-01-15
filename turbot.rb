@@ -11,6 +11,8 @@ SETTINGS = OpenStruct.new(YAML.load_file(File.expand_path('./turbot.yaml'))[:set
 #####################################################
 # Setup plugins
 #####################################################
+require_relative './plugin_handler.rb'
+
 dir = File.dirname(File.expand_path(__FILE__))
 Dir.chdir dir
 $: << "#{dir}/plugin"
