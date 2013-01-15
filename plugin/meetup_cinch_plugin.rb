@@ -9,8 +9,11 @@ module TurbotPlugins
 
     set :prefix, PREFIX
 
-    handler = Handler.new('Meetup', '.next_meetup', 'Get the next meetup information.')
-    PluginHandler.add_handler(handler)
+    PluginHandler.add_plugin(self)
+
+    def self.help
+      PluginCommand.new(".nextmeetup", 'Get the next meetup information.')
+    end
 
     match /nextmeetup/, method: :nextmeetup
     def nextmeetup(m)

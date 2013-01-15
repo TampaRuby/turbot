@@ -3,6 +3,8 @@ Bundler.require(:default, :test)
 
 PREFIX = /^\./
 
+require_relative '../plugin_handler.rb'
+
 ENV["MEETUP_API_KEY"] ||= "MEETUP_API_KEY"
 VCR.configure do |c|
   c.cassette_library_dir = 'spec/fixtures/vcr_cassettes'

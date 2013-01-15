@@ -5,6 +5,12 @@ module TurbotPlugins
     include Cinch::Plugin
     set :prefix, PREFIX
 
+    PluginHandler.add_plugin(self)
+
+    def self.help
+      PluginCommand.new(".cowsay", "\x02Bovine Phrase\x02 = Awesome Cowsay Graphic")
+    end
+
     match /help/, method: :help
     def help(m)
       m.reply ".cowsay \x02Bovine Phrase\x02 = Awesome Cowsay Graphic"

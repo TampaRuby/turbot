@@ -36,6 +36,7 @@ GEM
       diff-lcs (~> 1.1.3)
     rspec-mocks (2.12.1)
     slop (3.3.3)
+    terminal-table (1.4.5)
     unf (0.0.5)
       unf_ext
     unf_ext (0.0.5)
@@ -54,5 +55,6 @@ DEPENDENCIES
   pry
   rMeetup (~> 1.0)
   rspec
+  terminal-table (~> 1.4.5)
   vcr (~> 2.4.0)
   webmock (~> 1.9.0)

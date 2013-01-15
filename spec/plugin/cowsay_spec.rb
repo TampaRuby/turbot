@@ -15,9 +15,9 @@ describe TurbotPlugins::Cowsay do
   end
 
   context "#help" do
-    it "should print the plugins help message." do
-      m.should_receive(:reply).with(".cowsay \x02Bovine Phrase\x02 = Awesome Cowsay Graphic")
-      plugin.help(m)
+    it "responds to .help with information about itself." do
+      plugin.class.help.matchers.should eql(".cowsay")
+      plugin.class.help.description.should eql("\x02Bovine Phrase\x02 = Awesome Cowsay Graphic")
     end
   end
 end

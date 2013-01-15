@@ -1,13 +1,18 @@
 module PluginHandler
-  def self.handlers
-    @handlers
+  def self.plugins
+    @plugins ||= []
   end
 
-  def self.add_handler()
-    @handlers ||= []
-    @handlers << handler
+  def self.add_plugin(plugin)
+    self.plugins << plugin
   end
 end
 
-class Handler < OpenStruct.new(:name, :matchers, :description)
+class PluginCommand
+  attr_accessor :matchers, :description
+
+  def initialize(matchers, description)
+    self.matchers    = matchers
+    self.description = description
+  end
 end

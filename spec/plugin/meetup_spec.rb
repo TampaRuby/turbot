@@ -8,9 +8,8 @@ describe TurbotPlugins::Meetup do
 
   context "#help" do
     it "responds to .help with information about itself." do
-      m.should_receive(:reply) {|arg| arg}
-
-      plugin.help(m).should eql(".nextmeetup = Get the next meetup info")
+      plugin.class.help.matchers.should eql(".nextmeetup")
+      plugin.class.help.description.should eql('Get the next meetup information.')
     end
   end
 
