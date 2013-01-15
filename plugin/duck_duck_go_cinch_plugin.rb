@@ -74,11 +74,6 @@ module TurbotPlugins
       PluginCommand.new(".ddg", "\x02Search Term\x02 = Perform DDG search.")
     end
 
-    match(/help/, method: :help)
-    def help(m)
-      m.reply ".ddg \x02Search Term\x02 = Perform DDG search."
-    end
-
     match(/ddg (.+)/, method: :search)
     def search(m, query)
       response = get_response("http://api.duckduckgo.com/?" + get_query_string(query))
