@@ -68,6 +68,12 @@ module TurbotPlugins
     include Cinch::Plugin
     set :prefix, PREFIX
 
+    PluginHandler.add_plugin(self)
+
+    def self.help
+      PluginCommand.new(".ddg", "\x02Search Term\x02 = Perform DDG search.")
+    end
+
     match(/help/, method: :help)
     def help(m)
       m.reply ".ddg \x02Search Term\x02 = Perform DDG search."
