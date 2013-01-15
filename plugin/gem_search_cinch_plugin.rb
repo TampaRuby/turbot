@@ -6,10 +6,11 @@ module TurbotPlugins
     include Cinch::Plugin
     set :prefix, PREFIX
 
-    match /help/, method: :help
-    def help(m)
-      m.reply ".gem \x02Search Term\x02 = Gem Search"
-      m.reply ".gem info \x02Gem Name\x02 = Gem Info"
+    PluginHandler.add_plugin(self)
+
+    def self.help
+      [PluginCommand.new(".gem <search term>", "Gem Search"),
+       PluginCommand.new(".gem info <search term>", "Gem Info")]
     end
 
     match /gem info (\S+)/, method: :gem_info

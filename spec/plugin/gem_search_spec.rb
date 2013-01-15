@@ -26,10 +26,11 @@ describe TurbotPlugins::GemSearch do
 
   context "#help" do
     it "should print the plugins help message." do
-      m.should_receive(:reply).with(".gem \x02Search Term\x02 = Gem Search")
-      m.should_receive(:reply).with(".gem info \x02Gem Name\x02 = Gem Info")
+      plugin.class.help.first.matchers.should eql(".gem <search term>")
+      plugin.class.help.first.description.should eql("Gem Search")
 
-      plugin.help(m)
+      plugin.class.help.last.matchers.should eql(".gem info <search term>")
+      plugin.class.help.last.description.should eql("Gem Info")
     end
   end
 end
