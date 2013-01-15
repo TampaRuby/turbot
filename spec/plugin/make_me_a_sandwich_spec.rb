@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-require_relative '../../plugin/make_me_a_sandwich.rb'
+require_relative '../../plugin/make_me_a_sandwich_cinch_plugin.rb'
 
 describe TurbotPlugins::MakeMeASandwich do
   subject(:plugin){ described_class.new(double.as_null_object) }
