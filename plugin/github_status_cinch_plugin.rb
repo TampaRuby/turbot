@@ -7,10 +7,11 @@ module TurbotPlugins
 
     set :prefix, PREFIX
 
-    match /help/, :method => :help
-    def help(m)
-      m.reply ".github status = Show latest status update for Github. (will auto-print every 5 minutes when github is having issues)"
-      m.reply ".github last message = Show latest manual status update for Github."
+    PluginHandler.add_plugin(self)
+
+    def self.help
+      [PluginCommand.new("'.github status'","Show latest status update for Github. (will auto-print every 5 minutes when github is having issues"),
+       PluginCommand.new("'.github last message'","Show latest manual status update for Github.")]
     end
 
     timer 900, method: :status

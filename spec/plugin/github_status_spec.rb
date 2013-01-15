@@ -26,9 +26,11 @@ describe TurbotPlugins::GithubStatus do
 
   context "#help" do
     it "should send it's help info." do
-      m.should_receive(:reply).with(".github status = Show latest status update for Github. (will auto-print every 5 minutes when github is having issues)")
-      m.should_receive(:reply).with(".github last message = Show latest manual status update for Github.")
-      plugin.help(m)
+      plugin.class.help.first.matchers.should eql("'.github status'")
+      plugin.class.help.first.description.should eql("Show latest status update for Github. (will auto-print every 5 minutes when github is having issues")
+
+      plugin.class.help.last.matchers.should eql("'.github last message'")
+      plugin.class.help.last.description.should eql("Show latest manual status update for Github.")
     end
   end
 end
