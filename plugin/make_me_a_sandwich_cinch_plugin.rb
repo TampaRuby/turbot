@@ -5,13 +5,14 @@ module TurbotPlugins
     include Cinch::Plugin
     set :prefix, PREFIX
 
+    PluginHandler.add_plugin(self)
+
     OKAY  = "Okay."
     WHAT  = "What? Make it yourself"
     BLANK = ""
 
-    match /help/, method: :help
-    def help(m)
-      m.reply ".make me a sandwich = Request a tasty sandwich"
+    def self.help
+      PluginCommand.new("'.make me a sandwich'", "Request a tasty sandwich")
     end
 
     match /make me a sandwich/,      method: :make_me_a_sandwich
