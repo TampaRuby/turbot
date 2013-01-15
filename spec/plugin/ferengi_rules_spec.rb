@@ -27,9 +27,9 @@ describe TurbotPlugins::FerengiRules do
   end
 
   context "#help" do
-    it "should print the plugins help message." do
-      m.should_receive(:reply).with(".rule of aqcuisition = Print a random Ferengi rule of acquisition.")
-      plugin.help(m)
+    it "Returns information about itself." do
+      plugin.class.help.matchers.should eql(".rule of acquisition")
+      plugin.class.help.description.should eql("Print a random Ferengi rule of acquisition.")
     end
   end
 end

@@ -2,9 +2,10 @@ module TurbotPlugins
   class FerengiRules
     include Cinch::Plugin
 
-    match /help/, method: :help, prefix: PREFIX
-    def help(m)
-      m.reply ".rule of aqcuisition = Print a random Ferengi rule of acquisition."
+    PluginHandler.add_plugin(self)
+
+    def self.help
+      PluginCommand.new(".rule of acquisition","Print a random Ferengi rule of acquisition.")
     end
 
     match /rules? of acquisition/i, method: :print_random_rule, prefix: PREFIX
