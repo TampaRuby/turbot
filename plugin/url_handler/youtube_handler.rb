@@ -2,7 +2,7 @@ module UrlHandler
   class YoutubeHandler
     include Common
 
-    REGEXP = %r{https?://(?:www\.)?youtube\.com/watch\?v\=(\w+)$}
+    REGEXP = %r{https?://(?:www\.)?youtube\.com/watch\?(?:.+)?v\=(\w+)}
 
     attr_accessor :url, :video_id
 
