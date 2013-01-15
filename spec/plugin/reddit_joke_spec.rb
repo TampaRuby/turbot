@@ -25,9 +25,8 @@ describe TurbotPlugins::RedditJoke do
 
   context "#help" do
     it "should print the plugins help message." do
-      m.should_receive(:reply).with(".joke me = Random joke from reddit.com/r/jokes")
-      m.should_receive(:reply).with(".joke = Random joke from reddit.com/r/jokes")
-      plugin.help(m)
+      plugin.class.help.matchers.should eql("'.joke me', '.joke'")
+      plugin.class.help.description.should eql("Random joke from reddit.com/r/jokes.")
     end
   end
 end
