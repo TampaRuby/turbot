@@ -7,11 +7,10 @@ module TurbotPlugins
     include Cinch::Plugin
     set :prefix, PREFIX
 
-    match /help/, method: :help
-    def help(m)
-      m.reply ".chuck norris = Rockin' Norris Quote"
-      m.reply ".chuck says = Rockin' Norris Quote"
-      m.reply ".chuck = Rockin' Norris Quote"
+    PluginHandler.add_plugin(self)
+
+    def self.help
+      PluginCommand.new("'.chuck norris', '.chuck says', '.chuck'", "Rockin' Norris Quote")
     end
 
     match /chuck norris$/i, method: :chuck_norris

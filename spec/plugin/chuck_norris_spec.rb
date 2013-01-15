@@ -15,11 +15,9 @@ describe TurbotPlugins::ChuckNorris do
   end
 
   context "#help" do
-    it "should print the plugins help message." do
-      m.should_receive(:reply).with(".chuck norris = Rockin' Norris Quote")
-      m.should_receive(:reply).with(".chuck says = Rockin' Norris Quote")
-      m.should_receive(:reply).with(".chuck = Rockin' Norris Quote")
-      plugin.help(m)
+    it "Should print the plugin's help message." do
+      plugin.class.help.matchers.should eql("'.chuck norris', '.chuck says', '.chuck'")
+      plugin.class.help.description.should eql("Rockin' Norris Quote")
     end
   end
 end
