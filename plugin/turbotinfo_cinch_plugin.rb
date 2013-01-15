@@ -5,6 +5,12 @@ module TurbotPlugins
     include Cinch::Plugin
     set :prefix, PREFIX
 
+    PluginHandler.add_plugin(self)
+
+    def self.help
+      PluginCommand.new(".turbotinfo", "Information about turbot.")
+    end
+
     match /help/, method: :help
     def help(m)
       m.reply ".turbotinfo = Information about Turbot"

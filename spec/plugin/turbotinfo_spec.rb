@@ -8,9 +8,8 @@ describe TurbotPlugins::TurbotInfo do
 
   context "#help" do
     it "should return the help text for itself." do
-      m.should_receive(:reply) { |arg| arg}
-
-      plugin.help(m).should eql(".turbotinfo = Information about Turbot")
+      plugin.class.help.matchers.should eql(".turbotinfo")
+      plugin.class.help.description.should eql("Information about turbot.")
     end
   end
 
