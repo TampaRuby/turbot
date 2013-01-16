@@ -8,12 +8,8 @@ require 'json'
 PREFIX = /^\./
 SETTINGS = OpenStruct.new(YAML.load_file(File.expand_path('./turbot.yaml'))[:settings])
 
-#####################################################
-# Setup plugins
-#####################################################
 require_relative 'plugin_handler'
 Dir["./plugin/**/*cinch_plugin.rb"].each {|file| require file }
-#####################################################
 
 bot = Cinch::Bot.new do
   configure do |c|
