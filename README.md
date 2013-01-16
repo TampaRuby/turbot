@@ -84,9 +84,10 @@ This plugin reports the status of Github. (Duh).  It also periodically reports i
 
 #### Help
 
-This plugin reports all of the available commands.  To get further help, you can execute `.help <command name>`
+This plugin reports all of the available commands.  To get further help, you can execute `.help <command name>`which will print an ASCII table of the commands matching your criteria.
 
 ![help_example](https://raw.github.com/rondale-sc/turbot/master/assets/images/help_example.png)
+![help_example](https://raw.github.com/rondale-sc/turbot/master/assets/images/help_command_example.png)
 
 #### Make Me a Sandwich
 

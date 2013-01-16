@@ -31,7 +31,7 @@ describe TurbotPlugins::Help do
 
   context "#help_command" do
     it "should print the detailed help for the given matcher." do
-      m.should_receive(:reply).with(".nextmeetup - Get the next meetup information.")
+      m.should_receive(:reply).with("+-------------+----------------------------------+\n| Matchers    | Description                      |\n+-------------+----------------------------------+\n| .nextmeetup | Get the next meetup information. |\n+-------------+----------------------------------+")
       plugin.help_command(m, '.nextmeetup')
     end
   end

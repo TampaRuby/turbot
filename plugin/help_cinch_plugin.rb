@@ -18,7 +18,11 @@ module TurbotPlugins
 
     match /help (.+)/, method: :help_command
     def help_command(m, matcher)
-      m.reply PluginHandler.command(matcher).display_row.join(' - ')
+      m.reply print_table(PluginHandler.find_commands(matcher)).to_s
+    end
+
+    def print_table(commands)
+      Terminal::Table.new :headings => ['Matchers', 'Description'], :rows => commands.collect{|c| c.display_row}
     end
   end
 end

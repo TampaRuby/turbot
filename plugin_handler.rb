@@ -15,8 +15,12 @@ module PluginHandler
     commands.collect{|c| c.matchers}
   end
 
+  def self.find_commands(matcher)
+    commands.select{|c| c.matchers =~ /#{matcher}/}
+  end
+
   def self.command(matcher)
-    commands.detect{|c| c.matchers =~ /#{matcher}/}
+    find_commands(matcher).first
   end
 end
 
