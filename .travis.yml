@@ -10,4 +10,6 @@ notifications:
     channels:
       - "irc.freenode.org#turbot"
       - "irc.freenode.org#tamparb"
-  skip_join: true
+    on_success: change
+    on_failure: change
+    skip_join: true
