@@ -8,7 +8,7 @@ module PluginHandler
   end
 
   def self.commands
-    plugins.inject([]) {|m,p| m += Array(p.help) }
+    plugins.inject([]) {|m,p| m += Array(p.help) if p.respond_to?(:help) }
   end
 
   def self.matchers

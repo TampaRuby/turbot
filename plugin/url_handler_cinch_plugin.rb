@@ -16,6 +16,8 @@ module TurbotPlugins
 
     listen_to :channel
 
+    PluginHandler.add_plugin(self)
+
     def handlers
       ::UrlHandler::Handlers.handlers
     end
