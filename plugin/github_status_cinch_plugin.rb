@@ -9,7 +9,7 @@ module TurbotPlugins
 
     PluginHandler.add_plugin(self)
 
-    def self.help
+    def self.commands
       [PluginCommand.new("'.github status'","Show latest status update for Github. (will auto-print every 5 minutes when github is having issues"),
        PluginCommand.new("'.github last message'","Show latest manual status update for Github.")]
     end

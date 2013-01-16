@@ -8,7 +8,7 @@ module TurbotPlugins
 
     PluginHandler.add_plugin(self)
 
-    def self.help
+    def self.commands
       [PluginCommand.new(".gem <search term>", "Gem Search"),
        PluginCommand.new(".gem info <search term>", "Gem Info")]
     end

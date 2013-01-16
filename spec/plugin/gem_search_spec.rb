@@ -24,13 +24,13 @@ describe TurbotPlugins::GemSearch do
     end
   end
 
-  context "#help" do
+  context ".commands" do
     it "should print the plugins help message." do
-      plugin.class.help.first.matchers.should eql(".gem <search term>")
-      plugin.class.help.first.description.should eql("Gem Search")
+      plugin.class.commands.first.matchers.should eql(".gem <search term>")
+      plugin.class.commands.first.description.should eql("Gem Search")
 
-      plugin.class.help.last.matchers.should eql(".gem info <search term>")
-      plugin.class.help.last.description.should eql("Gem Info")
+      plugin.class.commands.last.matchers.should eql(".gem info <search term>")
+      plugin.class.commands.last.description.should eql("Gem Info")
     end
   end
 end
