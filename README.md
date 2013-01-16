@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/rondale-sc/turbot.png)](https://travis-ci.org/rondale-sc/turbot)
+
 # Turbot
 
 A Ruby IRC bot.
@@ -30,3 +32,5 @@ or
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request
+
+Feel free to file an issue [here](https://github.com/rondale-sc/turbot/issues) for feature ideas. 
