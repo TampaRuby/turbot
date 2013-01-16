@@ -22,10 +22,17 @@ describe TurbotPlugins::Help do
 
   context "#help" do
     it "should print the plugins help message." do
-
-      m.should_receive(:reply).with("+-------------+----------------------------------+\n| Matchers    | Description                      |\n+-------------+----------------------------------+\n| .nextmeetup | Get the next meetup information. |\n+-------------+----------------------------------+")
+      m.should_receive(:reply).with("Hi, I'm turbot. I know how to respond to many commands (I accept pull requests for more).")
+      m.should_receive(:reply).with(".nextmeetup")
 
       plugin.help(m)
+    end
+  end
+
+  context "#help_command" do
+    it "should print the detailed help for the given matcher." do
+      m.should_receive(:reply).with(".nextmeetup - Get the next meetup information.")
+      plugin.help_command(m, '.nextmeetup')
     end
   end
 end

@@ -2,18 +2,23 @@ module TurbotPlugins
   class Help
     include Cinch::Plugin
 
-    set :prefix, PREFIX
+    PluginHandler.add_plugin(self)
 
-    match /help/, method: :help
-    def help(m)
-      m.reply pretty_help.to_s
+    def self.help
+      PluginCommand.new('.help', 'This help display.')
     end
 
-    def pretty_help
-      plugin_commands = PluginHandler.plugins.inject([]) {|m,p| m += Array(p.help) }
-      rows            = plugin_commands.collect {|c| [c.matchers,c.description]}
+    set :prefix, PREFIX
 
-      Terminal::Table.new :headings => ['Matchers', 'Description'], :rows => rows
+    match /help$/, method: :help
+    def help(m)
+      m.reply "Hi, I'm turbot. I know how to respond to many commands (I also accept pull requests for more). For more information on any of them execute .help <command name>."
+      m.reply PluginHandler.matchers.join(", ")
+    end
+
+    match /help (.+)/, method: :help_command
+    def help_command(m, matcher)
+      m.reply PluginHandler.command(matcher).display_row.join(' - ')
     end
   end
 end
