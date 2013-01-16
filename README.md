@@ -11,6 +11,31 @@
 
 Turbot is a group effort to bring some entertainment to IRC.  It has been built for `#tamparb` by `#tamparb`.  Not in the Tampa area?  Don't worry you can easily get turbot up and running in your own channel. If you want to contribute to Turbot there is a section below that will help you do so.  
 
+# Contributing
+
+If you'd like to add a function or feature to turbot the reccomended way is to create a plugin.  (See some existing plugins below)
+
+The main guidelines are as follows
+
+1. Plugins should do __one__ thing.
+2. Plugins should have a pretty simple matcher
+3. Plugins should register themselves
+  - This is mainly so that the `.help` command can stay current, but also enables turbot to do some pretty neat stuff.
+4. Plugins need to be suffixed with `cinch_plugin.rb`.  This is how your plugin will be loaded.
+
+Let's take a look at the TurbotInfo plugin. 
+
+![turbot_info_example](https://raw.github.com/rondale-sc/turbot/master/assets/images/turbot_info_example.png)
+
+1. Include `Cinch::Plugin` - This gives you access to all the methods that cinch provides.
+2. Set your prefix.  All commands are prefixed so that they aren't triggered accidentally.  The `PREFIX` constant is set to `.` (dot).  You may override it if you wish, but going with the default is probably the best way to go.
+3. `PluginHandler.add_plugin(self)` This is how your plugin is registered.  
+4. Remember when we registered the plugin?  This is where we do some cool stuff with it.  Inside another plugin, the aptly named 'help' plugin, we iterate over all the plugins' `help` method and print it in a nice ascii table.  See example output below.
+5. This is where you write your matcher.  You do not need to include your prefix in your matcher as it is added there by cinch.
+6. Where you do your cool plugin stuff.
+
+If you want to contribute something other than a plugin.  Fork, code, submit pull req.  And we'll see what we can do.
+
 # Plugins
 
 Plugins:
