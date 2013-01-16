@@ -14,19 +14,24 @@ module TurbotPlugins
        PluginCommand.new("'.github last message'","Show latest manual status update for Github.")]
     end
 
-    timer 900, method: :status
+    timer 900, method: :automated_status
+    match /github automated status/, method: :automated_status
+    def automated_status(m=nil)
+      message = "github status: \x02#{last_message['created_on']}\x02 - \x02#{last_message['status']}\x02"
+
+      if last_message != @previous_last_message && !['good','minor'].include?(last_message['status'])
+        bot.channel_list.each{|c| c.send(message)}
+      end
+
+      @previous_last_message = last_message
+    end
+
     match /github status/, :method => :status
-    def status(m=nil)
+    def status(m)
       data = get_json_data('https://status.github.com/api/status.json')
       message = "github status: \x02#{data['last_updated']}\x02 - \x02#{data['status']}\x02"
 
-      if m
-        m.reply message
-      else
-        if data['status'] != 'good'
-          bot.channel_list.each{|c| c.send(message)}
-        end
-      end
+      m.reply message
     end
 
     match /github last message/, :method => :last_message
