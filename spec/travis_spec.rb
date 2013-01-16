@@ -10,7 +10,6 @@ describe ".travis.yml" do
   end
 
   it "should be a valid Travis-CI configuration file." do
-  do
     Travis::Lint::Linter.valid?(travis_configuration).should be_true
   end
 end
