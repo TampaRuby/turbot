@@ -26,10 +26,10 @@ describe TurbotPlugins::FerengiRules do
     end
   end
 
-  context "#help" do
+  context ".commands" do
     it "Returns information about itself." do
-      plugin.class.help.matchers.should eql(".rule of acquisition")
-      plugin.class.help.description.should eql("Print a random Ferengi rule of acquisition.")
+      plugin.class.commands.matchers.should eql(".rule of acquisition")
+      plugin.class.commands.description.should eql("Print a random Ferengi rule of acquisition.")
     end
   end
 end

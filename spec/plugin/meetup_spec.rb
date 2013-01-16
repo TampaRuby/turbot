@@ -6,10 +6,10 @@ describe TurbotPlugins::Meetup do
   subject(:plugin){ TurbotPlugins::Meetup.new(double.as_null_object) }
   let(:m) {double}
 
-  context "#help" do
+  context ".commands" do
     it "responds to .help with information about itself." do
-      plugin.class.help.matchers.should eql(".nextmeetup")
-      plugin.class.help.description.should eql('Get the next meetup information.')
+      plugin.class.commands.matchers.should eql(".nextmeetup")
+      plugin.class.commands.description.should eql('Get the next meetup information.')
     end
   end
 

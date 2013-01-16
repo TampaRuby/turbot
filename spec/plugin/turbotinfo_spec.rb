@@ -6,10 +6,10 @@ describe TurbotPlugins::TurbotInfo do
   subject(:plugin) {TurbotPlugins::TurbotInfo.new(double.as_null_object) }
   let(:m) { double }
 
-  context "#help" do
+  context "#commands" do
     it "should return the help text for itself." do
-      plugin.class.help.matchers.should eql(".turbotinfo")
-      plugin.class.help.description.should eql("Information about turbot.")
+      plugin.class.commands.matchers.should eql(".turbotinfo")
+      plugin.class.commands.description.should eql("Information about turbot.")
     end
   end
 

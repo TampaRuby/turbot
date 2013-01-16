@@ -14,10 +14,10 @@ describe TurbotPlugins::Cowsay do
     end
   end
 
-  context "#help" do
+  context ".commands" do
     it "responds to .help with information about itself." do
-      plugin.class.help.matchers.should eql(".cowsay")
-      plugin.class.help.description.should eql("\x02Bovine Phrase\x02 = Awesome Cowsay Graphic")
+      plugin.class.commands.matchers.should eql(".cowsay")
+      plugin.class.commands.description.should eql("\x02Bovine Phrase\x02 = Awesome Cowsay Graphic")
     end
   end
 end

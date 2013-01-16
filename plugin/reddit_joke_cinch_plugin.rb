@@ -9,7 +9,7 @@ module TurbotPlugins
 
     PluginHandler.add_plugin(self)
 
-    def self.help
+    def self.commands
       PluginCommand.new("'.joke me', '.joke'", "Random joke from reddit.com/r/jokes.")
     end
 
