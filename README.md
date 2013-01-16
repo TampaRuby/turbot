@@ -30,7 +30,7 @@ Let's take a look at the TurbotInfo plugin.
 1. Include `Cinch::Plugin` - This gives you access to all the methods that cinch provides.
 2. Set your prefix.  All commands are prefixed so that they aren't triggered accidentally.  The `PREFIX` constant is set to `.` (dot).  You may override it if you wish, but going with the default is probably the best way to go.
 3. `PluginHandler.add_plugin(self)` This is how your plugin is registered.  
-4. Remember when we registered the plugin?  This is where we do some cool stuff with it.  Inside another plugin, the aptly named 'help' plugin, we iterate over all the plugins' `help` method and print it in a nice ascii table.  See example output below.
+4. Remember when we registered the plugin?  This is where we do some cool stuff with it.  Inside another plugin, the aptly named 'help' plugin, we iterate over all the plugins' `help` method and print out a listing of the available commands. See example output below.
 5. This is where you write your matcher.  You do not need to include your prefix in your matcher as it is added there by cinch.
 6. Where you do your cool plugin stuff.
 
@@ -84,9 +84,10 @@ This plugin reports the status of Github. (Duh).  It also periodically reports i
 
 #### Help
 
-If this plugin isn't blocked for flooding the channel it reports an ascii table that tells you how to access all the commands.  ^\_^
+This plugin reports all of the available commands.  To get further help, you can execute `.help <command name>`which will print an ASCII table of the commands matching your criteria.
 
 ![help_example](https://raw.github.com/rondale-sc/turbot/master/assets/images/help_example.png)
+![help_example](https://raw.github.com/rondale-sc/turbot/master/assets/images/help_command_example.png)
 
 #### Make Me a Sandwich
 
