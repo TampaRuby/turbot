@@ -4,7 +4,7 @@ module TurbotPlugins
 
     PluginHandler.add_plugin(self)
 
-    def self.help
+    def self.commands
       PluginCommand.new(".rule of acquisition","Print a random Ferengi rule of acquisition.")
     end
 

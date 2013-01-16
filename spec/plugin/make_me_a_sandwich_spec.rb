@@ -60,10 +60,12 @@ describe TurbotPlugins::MakeMeASandwich do
     end
   end
 
-  context "#help" do
-    it "should print the plugins help message." do
-      plugin.class.help.matchers.should eql("'.make me a sandwich'")
-      plugin.class.help.description.should eql("Request a tasty sandwich")
+  context ".commands" do
+    it "returns a PluginCommand instance." do
+      command = plugin.class.commands
+      command.should be_instance_of(PluginCommand)
+      command.matchers.should eql("'.make me a sandwich'")
+      command.description.should eql("Request a tasty sandwich")
     end
   end
 end

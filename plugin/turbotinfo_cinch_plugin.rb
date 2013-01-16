@@ -7,7 +7,7 @@ module TurbotPlugins
 
     PluginHandler.add_plugin(self)
 
-    def self.help
+    def self.commands
       PluginCommand.new(".turbotinfo", "Information about turbot.")
     end
 

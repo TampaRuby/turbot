@@ -19,10 +19,12 @@ describe TurbotPlugins::DuckDuckGo do
     end
   end
 
-  context "#help" do
-    it "Should return information about itself." do
-      plugin.class.help.matchers.should eql(".ddg")
-      plugin.class.help.description.should eql("\x02Search Term\x02 = Perform DDG search.")
+  context ".commands" do
+    it "returns a PluginCommand instance." do
+      command = plugin.class.commands
+      command.should be_instance_of(PluginCommand)
+      command.matchers.should eql(".ddg")
+      command.description.should eql("\x02Search Term\x02 = Perform DDG search.")
     end
   end
 end
