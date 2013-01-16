@@ -9,7 +9,8 @@ describe ".travis.yml" do
     YAML.load_file(path.to_s)
   end
 
-  it "should be a valid Travis-CI configuration file.", :focus do
+  it "should be a valid Travis-CI configuration file." do
+  do
     Travis::Lint::Linter.valid?(travis_configuration).should be_true
   end
 end
