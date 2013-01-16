@@ -9,7 +9,7 @@ module TurbotPlugins
 
     PluginHandler.add_plugin(self)
 
-    def self.help
+    def self.commands
       PluginCommand.new("'.chuck norris', '.chuck says', '.chuck'", "Rockin' Norris Quote")
     end
 
