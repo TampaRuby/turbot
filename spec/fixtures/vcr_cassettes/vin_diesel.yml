@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://api.icndb.com/jokes/random
+    uri: "http://api.icndb.com/jokes/random?firstName=Vin&lastName=Diesel"
     body:
       encoding: US-ASCII
       string: ''
@@ -40,9 +40,9 @@ http_interactions:
       - text/html
     body:
       encoding: US-ASCII
-      string: ! '{ "type": "success", "value": { "id": 407, "joke": "Chuck Norris
+      string: ! '{ "type": "success", "value": { "id": 407, "joke": "Vin Diesel
         originally wrote the first dictionary. The definition for each word is as
         follows - A swift roundhouse kick to the face.", "categories": [] } }'
-    http_version: 
+    http_version:
   recorded_at: Sun, 13 Jan 2013 17:33:05 GMT
 recorded_with: VCR 2.4.0
