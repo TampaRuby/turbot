@@ -7,9 +7,11 @@ describe TurbotPlugins::TurbotInfo do
   let(:m) { double }
 
   context "#commands" do
-    it "should return the help text for itself." do
-      plugin.class.commands.matchers.should eql(".turbotinfo")
-      plugin.class.commands.description.should eql("Information about turbot.")
+    it "returns a PluginCommand instance." do
+      command = plugin.class.commands
+      command.should be_instance_of(PluginCommand)
+      command.matchers.should eql(".turbotinfo")
+      command.description.should eql("Information about turbot.")
     end
   end
 

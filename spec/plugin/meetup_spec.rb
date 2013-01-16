@@ -7,9 +7,11 @@ describe TurbotPlugins::Meetup do
   let(:m) {double}
 
   context ".commands" do
-    it "responds to .help with information about itself." do
-      plugin.class.commands.matchers.should eql(".nextmeetup")
-      plugin.class.commands.description.should eql('Get the next meetup information.')
+    it "returns a PluginCommand instance." do
+      command = plugin.class.commands
+      command.should be_instance_of(PluginCommand)
+      command.matchers.should eql(".nextmeetup")
+      command.description.should eql('Get the next meetup information.')
     end
   end
 

@@ -24,9 +24,11 @@ describe TurbotPlugins::RedditJoke do
   end
 
   context ".commands" do
-    it "should print the plugins help message." do
-      plugin.class.commands.matchers.should eql("'.joke me', '.joke'")
-      plugin.class.commands.description.should eql("Random joke from reddit.com/r/jokes.")
+    it "returns a PluginCommand instance." do
+      command = plugin.class.commands
+      command.should be_instance_of(PluginCommand)
+      command.matchers.should eql("'.joke me', '.joke'")
+      command.description.should eql("Random joke from reddit.com/r/jokes.")
     end
   end
 end

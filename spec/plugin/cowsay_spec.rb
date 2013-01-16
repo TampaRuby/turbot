@@ -15,9 +15,11 @@ describe TurbotPlugins::Cowsay do
   end
 
   context ".commands" do
-    it "responds to .help with information about itself." do
-      plugin.class.commands.matchers.should eql(".cowsay")
-      plugin.class.commands.description.should eql("\x02Bovine Phrase\x02 = Awesome Cowsay Graphic")
+    it "returns a PluginCommand instance." do
+      command = plugin.class.commands
+      command.should be_instance_of(PluginCommand)
+      command.matchers.should eql(".cowsay")
+      command.description.should eql("\x02Bovine Phrase\x02 = Awesome Cowsay Graphic")
     end
   end
 end
