@@ -11,7 +11,7 @@ module TurbotPlugins
     WHAT  = "What? Make it yourself"
     BLANK = ""
 
-    def self.help
+    def self.commands
       PluginCommand.new("'.make me a sandwich'", "Request a tasty sandwich")
     end
 

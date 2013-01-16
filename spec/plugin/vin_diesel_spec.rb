@@ -14,10 +14,12 @@ describe TurbotPlugins::VinDiesel do
     end
   end
 
-  context "#help" do
-    it "Should print the plugin's help message." do
-      plugin.class.help.matchers.should eql("'.vin diesel', '.vin says', '.vin'")
-      plugin.class.help.description.should eql("Rockin' Diesel Quote")
+  context ".commands" do
+    it "returns a PluginCommand instance." do
+      command = plugin.class.commands
+      command.should be_instance_of(PluginCommand)
+      command.matchers.should eql("'.vin diesel', '.vin says', '.vin'")
+      command.description.should eql("Rockin' Diesel Quote")
     end
   end
 end

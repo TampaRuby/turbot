@@ -24,13 +24,18 @@ describe TurbotPlugins::GithubStatus do
     end
   end
 
-  context "#help" do
-    it "should send it's help info." do
-      plugin.class.help.first.matchers.should eql("'.github status'")
-      plugin.class.help.first.description.should eql("Show latest status update for Github. (will auto-print every 5 minutes when github is having issues")
+  context ".commands" do
+    it "returns an array of PluginCommand instances." do
+      commands = plugin.class.commands
+      commands.each do |command|
+        command.should be_instance_of(PluginCommand)
+      end
 
-      plugin.class.help.last.matchers.should eql("'.github last message'")
-      plugin.class.help.last.description.should eql("Show latest manual status update for Github.")
+      commands.first.matchers.should eql("'.github status'")
+      commands.first.description.should eql("Show latest status update for Github. (will auto-print every 5 minutes when github is having issues")
+
+      commands.last.matchers.should eql("'.github last message'")
+      commands.last.description.should eql("Show latest manual status update for Github.")
     end
   end
 end

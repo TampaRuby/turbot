@@ -7,7 +7,7 @@ module TurbotPlugins
 
     PluginHandler.add_plugin(self)
 
-    def self.help
+    def self.commands
       PluginCommand.new(".cowsay", "\x02Bovine Phrase\x02 = Awesome Cowsay Graphic")
     end
 

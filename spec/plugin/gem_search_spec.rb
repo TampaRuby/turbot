@@ -24,13 +24,18 @@ describe TurbotPlugins::GemSearch do
     end
   end
 
-  context "#help" do
-    it "should print the plugins help message." do
-      plugin.class.help.first.matchers.should eql(".gem <search term>")
-      plugin.class.help.first.description.should eql("Gem Search")
+  context ".commands" do
+    it "returns an array of PluginCommand instances." do
+      commands = plugin.class.commands
+      commands.each do |command|
+        command.should be_instance_of(PluginCommand)
+      end
 
-      plugin.class.help.last.matchers.should eql(".gem info <search term>")
-      plugin.class.help.last.description.should eql("Gem Info")
+      commands.first.matchers.should eql(".gem <search term>")
+      commands.first.description.should eql("Gem Search")
+
+      commands.last.matchers.should eql(".gem info <search term>")
+      commands.last.description.should eql("Gem Info")
     end
   end
 end
