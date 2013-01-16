@@ -1,15 +1,15 @@
 [![Build Status](https://travis-ci.org/rondale-sc/turbot.png)](https://travis-ci.org/rondale-sc/turbot)
 
 ```
- _______         _           _   
- |__   __|       | |         | |  
-    | |_   _ _ __| |__   ___ | |_ 
+ _______         _           _
+ |__   __|       | |         | |
+    | |_   _ _ __| |__   ___ | |_
     | | | | | '__| '_ \ / _ \| __|
-    | | |_| | |  | |_) | (_) | |_ 
+    | | |_| | |  | |_) | (_) | |_
     |_|\__,_|_|  |_.__/ \___/ \__|
 ```
 
-Turbot is a group effort to bring some entertainment to IRC.  It has been built for `#tamparb` by `#tamparb`.  Not in the Tampa area?  Don't worry you can easily get turbot up and running in your own channel. If you want to contribute to Turbot there is a section below that will help you do so.  
+Turbot is a group effort to bring some entertainment to IRC.  It has been built for `#tamparb` by `#tamparb`.  Not in the Tampa area?  Don't worry you can easily get turbot up and running in your own channel. If you want to contribute to Turbot there is a section below that will help you do so.
 
 # Contributing
 
@@ -23,13 +23,13 @@ The main guidelines are as follows
   - This is mainly so that the `.help` command can stay current, but also enables turbot to do some pretty neat stuff.
 4. Plugins need to be suffixed with `cinch_plugin.rb`.  This is how your plugin will be loaded.
 
-Let's take a look at the TurbotInfo plugin. 
+Let's take a look at the TurbotInfo plugin.
 
 ![turbot_info_example](https://raw.github.com/rondale-sc/turbot/master/assets/images/turbot_info_example.png)
 
 1. Include `Cinch::Plugin` - This gives you access to all the methods that cinch provides.
 2. Set your prefix.  All commands are prefixed so that they aren't triggered accidentally.  The `PREFIX` constant is set to `.` (dot).  You may override it if you wish, but going with the default is probably the best way to go.
-3. `PluginHandler.add_plugin(self)` This is how your plugin is registered.  
+3. `PluginHandler.add_plugin(self)` This is how your plugin is registered.
 4. Remember when we registered the plugin?  This is where we do some cool stuff with it.  Inside another plugin, the aptly named 'help' plugin, we iterate over all the plugins' `help` method and print out a listing of the available commands. See example output below.
 5. This is where you write your matcher.  You do not need to include your prefix in your matcher as it is added there by cinch.
 6. Where you do your cool plugin stuff.
@@ -52,11 +52,11 @@ This plugin lets you use Duck Duck Go's api in the IRC channel.  Check here for 
 
 ![duck_duck_go_example](https://raw.github.com/rondale-sc/turbot/master/assets/images/duck_duck_go_example.png)
 
-#### Chuck Norris
+#### Vin Diesel
 
-As its name implies.  This is all about Chuck Norris.  Observe:
+As its name implies.  This is all about Vin Diesel.  Observe:
 
-![chuck_norris_example](https://raw.github.com/rondale-sc/turbot/master/assets/images/chuck_norris_example.png)
+![vin_diesel_example](https://raw.github.com/rondale-sc/turbot/master/assets/images/vin_diesel_example.png)
 
 #### Cowsay
 
@@ -103,6 +103,6 @@ Ask turbot to tell you a joke.
 
 #### URL Handler
 
-Arguably the most useful plugin.  Prints short summary for a given url.  Does special formatting for youtube, twitter, et al.  
+Arguably the most useful plugin.  Prints short summary for a given url.  Does special formatting for youtube, twitter, et al.
 
 ![url_handler_example](https://raw.github.com/rondale-sc/turbot/master/assets/images/url_handler_example.png)
