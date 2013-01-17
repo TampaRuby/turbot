@@ -1,8 +1,6 @@
 require 'spec_helper'
 
-require_relative '../plugin_handler.rb'
-require_relative '../plugin/help_cinch_plugin.rb'
-
+require_relative '../../plugin/help_cinch_plugin.rb'
 
 class ClassThatRegistersWithPluginHandler
   PluginHandler.add_plugin(self)
