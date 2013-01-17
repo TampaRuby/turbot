@@ -43,7 +43,7 @@ module TurbotPlugins
       end
     end
 
-    match /turbot (\w+)/i, method: :cleverbot_response
+    match /turbot (.+$)/i, method: :cleverbot_response
     def cleverbot_response(m, query)
       conversation = CleverbotConversations.get_conversation(m.user.nick)
       m.reply conversation.client.write(query)
