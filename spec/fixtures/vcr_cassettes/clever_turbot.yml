@@ -1,0 +1,52 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://www.cleverbot.com/webservicemin
+    body:
+      encoding: US-ASCII
+      string: stimulus=Hello%3F&start=y&sessionid=&vText8=&vText7=&vText6=&vText5=&vText4=&vText3=&vText2=&icognoid=wsf&icognocheck=cd78c3e945384285116c68f5ebcd047e&fno=0&prevref=&emotionaloutput=&emotionalhistory=&asbotname=&ttsvoice=&typing=&lineref=&sub=Say&islearning=1&cleanslate=false
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 17 Jan 2013 19:01:00 GMT
+      Content-Type:
+      - text/html;charset=iso-8859-1
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - AIS=+TGNsb4qNzzpKlu+jVhyYQ
+      - JSESSIONID=0F89DAF86FB5756609566B77A7C06F12; Path=/
+      - RPS=cs5860
+      - cleverbotfirstref2="*AKXCTPWDMYGSOPTFYJRYAXJMXISNUTHZJUWAAQAKLK"; Expires=""
+      - cleverbotref="*XHXCWSOUEPDSRHKCYMJPXXMEOFSQMKEZMMNAXGAIOK"; Expires="Thu,
+        17 Jan 2013 20:04:43 GMT"
+      Mime-Version:
+      - '1.0'
+      Expires:
+      - Thu, 17 Jan 2013 19:04:45 GMT
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-cache;no-store
+      Rps:
+      - cs5860
+      Rlm:
+      - '1963'
+      Sc:
+      - '4688'
+      Content-Length:
+      - '171'
+      Server:
+      - Jabberwacky
+    body:
+      encoding: US-ASCII
+      string: ! "Why do you keep saying hello?\rRSM00278588\rj2log-zIqYSeJTZJAVQAEKRCGG-detail\r\r\r\r\r\rHello?\rWhy
+        do you keep saying hello?\rUJ001974338\r\r\r\r\r\rWhy do you keep saying hello?\r\r\r\r\r\r\r"
+    http_version: 
+  recorded_at: Thu, 17 Jan 2013 19:04:53 GMT
+recorded_with: VCR 2.4.0

@@ -3,5 +3,6 @@
   :nick: turbot
   :server: irc.freenode.net
   :channels:
-    - '#tamparb'
-    - '#turbot' 
+    #- '#tamparb'
+    #- '#turbot' 
+    - '#cinch-bots'
