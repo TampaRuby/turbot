@@ -1,6 +1,8 @@
 require 'bundler/setup'
 Bundler.require(:default, :test)
 
+require_relative '../plugin_handler.rb'
+
 PREFIX = /^\./
 
 ENV["MEETUP_API_KEY"] ||= "MEETUP_API_KEY"

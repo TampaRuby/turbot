@@ -17,6 +17,7 @@ module TurbotPlugins
     timer 900, method: :automated_status
     match /github automated status/, method: :automated_status
     def automated_status(m=nil)
+      last_message = get_json_data('https://status.github.com/api/last-message.json')
       message = "github status: \x02#{last_message['created_on']}\x02 - \x02#{last_message['status']}\x02"
 
       if last_message != @previous_last_message && !['good','minor'].include?(last_message['status'])

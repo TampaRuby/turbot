@@ -5,3 +5,11 @@ rvm:
   - 1.9.3
 script:
   - bundle exec rspec
+notifications:
+  irc:
+    channels:
+      - "irc.freenode.org#turbot"
+      - "irc.freenode.org#tamparb"
+    on_success: change
+    on_failure: change
+    skip_join: true
