@@ -13,8 +13,7 @@ module TurbotPlugins
       PluginCommand.new("'.joke me', '.joke'", "Random joke from reddit.com/r/jokes.")
     end
 
-    match /joke me/i, method: :joke
-    match /joke/i, method: :joke
+    match /joke(?: me)?/i, method: :joke
     def joke(m)
       m.reply random_joke
     end
