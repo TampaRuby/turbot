@@ -64,7 +64,7 @@ describe TurbotPlugins::UrlHandler do
       end
     end
 
-    context "when a github url is given" do
+    context "when a github repo url is given" do
       let(:message)    {double('message', :raw => url)}
       let(:reply_text) {"github: \x02rondale-sc/turbot\x02 - Tampa.rb IRC bot. (watchers: \x024\x02, forks: \x021\x02)"}
 
@@ -84,6 +84,17 @@ describe TurbotPlugins::UrlHandler do
           message.should_receive(:reply).with(reply_text)
           VCR.use_cassette('url_handler_github_url') { plugin.listen(message) }
         end
+      end
+    end
+
+    context "when a github issue url is given" do
+      let(:url)       {'https://github.com/rondale-sc/turbot/issues/36'}
+      let(:message)   {double('message', :raw => url)}
+      let(:reply_text) {"github issue: \x02rondale-sc/turbot\x02 \x02#36\x02 - Github Links should parse PR/Issue titles"}
+
+      it "should reply." do
+        message.should_receive(:reply).with(reply_text)
+        VCR.use_cassette('url_handler_github_issue_url') { plugin.listen(message) }
       end
     end
 
