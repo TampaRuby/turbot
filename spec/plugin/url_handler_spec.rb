@@ -98,6 +98,17 @@ describe TurbotPlugins::UrlHandler do
       end
     end
 
+    context "when a github pull request url is given" do
+      let(:url)       {'https://github.com/rondale-sc/turbot/pull/32'}
+      let(:message)   {double('message', :raw => url)}
+      let(:reply_text) {"github pull request: \x02rondale-sc/turbot\x02 \x02#32\x02 - Only fire joke method once for 'joke me' command."}
+
+      it "should reply." do
+        message.should_receive(:reply).with(reply_text)
+        VCR.use_cassette('url_handler_github_pull_request_url') { plugin.listen(message) }
+      end
+    end
+
     context "when a gist url is given" do
       let(:url)       {'https://gist.github.com/4513047'}
       let(:message)   {double('message', :raw => url)}
