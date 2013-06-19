@@ -1,0 +1,123 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.github.com/repos/rondale-sc/turbot/pulls/32
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip,deflate,identity
+      Accept:
+      - '*/*'
+      User-Agent:
+      - Mechanize/2.5.1 Ruby/2.0.0p195 (http://github.com/tenderlove/mechanize/)
+      Accept-Charset:
+      - ISO-8859-1,utf-8;q=0.7,*;q=0.7
+      Accept-Language:
+      - en-us,en;q=0.5
+      Host:
+      - api.github.com
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - 300
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - GitHub.com
+      Date:
+      - Tue, 18 Jun 2013 17:48:52 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Status:
+      - 200 OK
+      X-Ratelimit-Limit:
+      - '60'
+      X-Ratelimit-Remaining:
+      - '54'
+      Vary:
+      - Accept
+      - Accept-Encoding
+      Cache-Control:
+      - public, max-age=60, s-maxage=60
+      Last-Modified:
+      - Tue, 18 Jun 2013 15:27:22 GMT
+      Etag:
+      - '"b6c01dc766768d36e59e7b01ae2b2361"'
+      X-Github-Media-Type:
+      - github.beta
+      X-Content-Type-Options:
+      - nosniff
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Expose-Headers:
+      - ETag, Link, X-RateLimit-Limit, X-RateLimit-Remaining, X-OAuth-Scopes, X-Accepted-OAuth-Scopes
+      Access-Control-Allow-Origin:
+      - '*'
+      Content-Encoding:
+      - gzip
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA+2bXYuzSBbHv0ojLHMx3fElxiTCMgsDC3u1MPTe7E0otZI4
+        bTT40r39SH/3/Z/yNZbpxEpmYCDw0I/GOn+PVeWpqt8pS61II83V9nl+zFxd
+        Z8dwtgvzfeHN/OSgp/yYZHqaxAGL+Evm63mRekmuH4soyvS5pT1rYaC586W9
+        WC2cZ8gcos2pYl9tVKeSCcLtVsFyRnbw4shyf69iLwzpMbKs4FMEhEFdB3Fx
+        8HiKerCetSxnOUeN+lGS8QDKeZhH9MO/4+jzaRum/On35I0/HXi+T4KnJPb5
+        0zZJn36qf/3pCRV/YHEwg22RkWypRckujKGR/s78tyyJ63o3LWe+fNbYO8tZ
+        OnA+436R8tkura6K5qwOdSPYBqbBAnO9YnzBVkvHNgJm2A5bLtnaYL8Ef2/7
+        g2WvZnzG3tiBhbOY5zrLMp5nvU7yN+uf4YHteIaD5m794xd6iBfbMmbHeAfH
+        mzIb6jnaJV+oEr7roSSOHtrVy4Uu2BXcJlGUfMB6UHGDV+D0BnprBceq4zDe
+        KSjAqtSTfM/RbniEL6qYMMunOSMsSp3+Q22SBnpfmvJgkkO1Ddz5iOFJKd56
+        IVZ4mZ+GxzxM4mmOnVhCKUl3LA5/sOlKsMwgIALRpKcSFrDk7zyeWK2VSakf
+        0/Cd+Z9UFSn3efiOilWQG9hCLf88UkT4D73dX8+alwSfOMUFP+WIHsGG5Ti3
+        DHP+Ypgv5urVMtzF2rVW/0WZ4hiMl7HcuekubCpTBR9ZxnSttbuwqMiBp7ux
+        Ow2LbCgchfkm2zP4ZPL1wmLBfGX6i7kTLL1gy7m3DvylZbIFc2y28hfMW+MG
+        CBThLuZ40BijBW4YRjzLk7j9oRIetuo144Vem4qGeQ/5h3BypJ2vFiNbSa3u
+        bxdGwebWelkNA9Rdzrhz5ejaDi3iOWvX9pwhXmIoYB6nEbsJee42/N+Gxo7N
+        gYsn2OLi6W9V09nzwDZt5gVr218zb2VvzYB5juHZa+YH1nw9922PWQvqYo9h
+        5zHs9N6dwRj4GHbO181faNghVymi0DxsuVg4xtJ41mKGMOJq1TwfoWCL2L2p
+        f2xCTr0KwFUxY3hMUB8T1GbB+IgUeHnOLKYHdfMXihRiIkyr2i2LMn5xmV+v
+        sbowEfB2HYHqeWWHI5ul3tO/fvv1CTSBFrpYAb9pbp4WUP92vVcTCekWJDCc
+        So5Pt05NsaCDITx4459K9mRX6vhbr8B8LCuZl6QsTy4tLUefBXO+nkB5ckpT
+        y5yzg5KjwhAC+yRRqylhCIEKlVyzEBp/wHp626yyulmzumRlCd+aRYdSDbXG
+        pd6syb2Uxf6eK8k1tqVeHYnWYzslLbKDuRclnpI9Jiy6MC51rAYq2pBvVL0h
+        NbI9EcPKQ9k1sm3F8pSrVbhwi4xbKYJxaEolvxpbvaxrLGLxriDQ9T2HGO/0
+        rTFakYDLjv24iJ7GlTprSPlJnKehV6gHm86ePKuID2Cm0kP2zDsxgY9UqqwP
+        kcSjEodQ8qs2PemuN8hRPxtKTlrxD4agxrbUu1hYBdn6ikrt1VG20T6lE3E+
+        AkuuGi6pw5GtXv4MdL6vYceRpUN4fqUapgIp10uPZfxrNpuVhDlIVOAppcau
+        LCHBUn8PZqdSeWVji9nBgeWCiW7JrQArnihhgZJnrTGEquZR8a2y7PcVkY1R
+        kRKGfaWW0SnJddZ9zTjJw23oX8N+xwPeiUD5SxYiZfLMgBTRdfLQD9EPQdOp
+        dQQbU3K9soTbWP6KPj0KYs1XY+naALHrMyDWeTHsV8tyLYBYh8oci2x/Sln7
+        RRZUBNGkbjscIQXXYwuDBTclXWCQZU2mC+f/6Iq748XBguPhS3D5Hu/DkH3e
+        BC7tkwM/YmhsWG8W/sCx5djP2gcl2Gg88ZMiBtYGY2jGQqwFfiu8T7Jn2abq
+        190aAz91L0y9NKByH+Fb2CwVqll/p3wI0zSpM2EVdU6OPK6lex5Uk37ypXdd
+        +Na4K04OLMuRoKmmb/C2Ooe/Ad+yIsqlK19E8xHKTkBtm/V0W/uK0ranFaBF
+        Io6tmLMMzIXhWAC0c4B2K0BybuGsDc+ZI10XOAsT95cAbXsPXKx4ztLEA0zN
+        DHLD8rcr27fW3LRtP/ACjzkGs5kTeM7KW/6ZmcFLvlA1XAFe+jVzITfYLzot
+        O9glttXzg0ONmzKEndhtsLbTuWOWsCfazzCiQafnCTutyZnCzlQBxXTGd8oW
+        9r05yTWiWgb5QnK3BbfmCuh2fgHcduIt2JXRbVvoEUMGOLNfM48YQvOjOhp8
+        P+msgWfvda92J9xjp0FP9BFDBK462ad1cc/BRKQ7EkCuhbo1M/52rK4n/iN3
+        uZ7rDo2nk11J4Xa2K0neje5KytP5riShTHglpXswXklUkfJKOrdyXknwJtIr
+        qU1mvZIC1mq30N5RPXXeOyqnSHxHtW5gvpLejdRX0ruB+0pat5FfSa7PjmlI
+        n8h+Jb0b6e85PcGP4d8UYCtpDXEt3hCxZ+xaoCwJ0is2FJ3EgCXF+1BgSfZe
+        HFgSvpEEj+jdgQVLqko0WFK5Ew+WdBWJsKRzCxOWxG6lwpLgvbiwJPyHkGHp
+        LpfYsPVi4p/zahgu9ukaxhk2bFMZa+6aKCZ24MpsuF9EyFCYqibOOBqw4aGf
+        F+nwGYNLfPiMWfYtIR4a4VnGGfF8YcmMGF+SfM+Iq40iRIOnIWLw6KsQMcrV
+        iBhHJ4i4R7Q1F34qIeJNFMbYSoG9dxmPsF+31PYVET6zc+jM8qj7DAfYmbjE
+        iFIf2w8bRdjT5zcwFxFkxH48jScp1aNMpdWMZHeQ63ZAw8fBXm91+ebzpZ46
+        5Ksd8U1qQZwxjz7dqfevNz9saI5ImySL+C0GRkPfrjfTI5fR/1inrSWUeEB5
+        8QXSEFRQXLjymzEUfUD5AeZ5QPnqO8Vht9L/fCjfBT3k3aRIhd/q1QLSosjL
+        BUEovoXSXJOyiRGvz3DN32OfEXLGW/peBte//g+gbhULpDkAAA==
+    http_version: 
+  recorded_at: Tue, 18 Jun 2013 17:48:53 GMT
+recorded_with: VCR 2.4.0

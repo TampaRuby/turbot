@@ -1,0 +1,88 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.github.com/repos/rondale-sc/turbot/issues/36
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip,deflate,identity
+      Accept:
+      - '*/*'
+      User-Agent:
+      - Mechanize/2.5.1 Ruby/2.0.0p195 (http://github.com/tenderlove/mechanize/)
+      Accept-Charset:
+      - ISO-8859-1,utf-8;q=0.7,*;q=0.7
+      Accept-Language:
+      - en-us,en;q=0.5
+      Host:
+      - api.github.com
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - 300
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - GitHub.com
+      Date:
+      - Tue, 18 Jun 2013 17:42:24 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Status:
+      - 200 OK
+      X-Ratelimit-Limit:
+      - '60'
+      X-Ratelimit-Remaining:
+      - '56'
+      Vary:
+      - Accept
+      - Accept-Encoding
+      Cache-Control:
+      - public, max-age=60, s-maxage=60
+      Last-Modified:
+      - Tue, 18 Jun 2013 15:35:43 GMT
+      Etag:
+      - '"127a0fa7685ee1762f92089c0328cfa2"'
+      X-Github-Media-Type:
+      - github.beta
+      X-Content-Type-Options:
+      - nosniff
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Expose-Headers:
+      - ETag, Link, X-RateLimit-Limit, X-RateLimit-Remaining, X-OAuth-Scopes, X-Accepted-OAuth-Scopes
+      Access-Control-Allow-Origin:
+      - '*'
+      Content-Encoding:
+      - gzip
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA61VTY+bMBD9K5al3hJMgLAJUtVbq0o9rFatKrWqIgMTcNfY
+        1DZZpWj/e8dA0mwO2Wa3F7DseW++PM897YykGa2da23GGG9FUAlXd3lQ6IYZ
+        aLVlRquSS5jbgrnO5NoxYW0HlsUpnVHJc5B28zoeNrL0TPEGHpEVvTeg3Kt5
+        DzxICbv/QTiyIF3tGnmW9WnlLtZMlDRbLNN1sgqXM6q6JgdDszidUSecBGzI
+        h6EJ5JNQ95bYWneyJC03FsjtHfvoy08GU4uRdNajeyp1JRRii7aruv0qxiPv
+        6Ga9Dm9WM8p33HFzFrKFojMQVGY8Hbo+Ltm2WKb5GoBHaRLFSQJhvrqBkkf5
+        MlqkYf6ufHu8NlGyCiDg97zhIlDgGLcWnD25S2+i96LhFVhcHLydruc+i3kS
+        hUGrKoz8YLPxKdDnYvFVuHSRPbllJ4W53L0Tw62WUj8g+vINf+qAHVEY2LgW
+        qnoBA6J6pl0N2DdMwU9GJexzY3EWzIDomf9hNT2HxYtgoLwqoAmD4TwojKQf
+        xGEg63JbGNE6odV1VXqCRCZtKq7Eb349EyL9JAx6dVVWAwKR/yIOZ2UdIT1r
+        jdjxYu9LYaAAscPCvoDuDItsbt96Kfjix/vxILQ0+/5jaKDzZ7oFhZY4baJS
+        gDuqk3JGG4HK4LQ6bhxlMAtRWw0gutxwhwxRuIjnYTpfrD4vllm8zJL4GzJ2
+        bfmsTSG1nWhGty063xj4hW8DUvcnEjmel2K7Hbsz2XNX1H83MMdcl3sM6msN
+        inAiUf2I07ia5PD2jmhDhtcHvwRbh3nMiFD45yXRW/Kzs46UwraS73F4CI4O
+        6mY1qSUZ36+DoE52g9FAytDBIKuEW/IAUgZYiinNHAPzYT/+ATOSmpA0BwAA
+    http_version: 
+  recorded_at: Tue, 18 Jun 2013 17:42:25 GMT
+recorded_with: VCR 2.4.0
