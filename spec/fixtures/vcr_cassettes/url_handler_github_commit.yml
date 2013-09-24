@@ -1,0 +1,86 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.github.com/repos/TampaRuby/turbot/git/commits/94ab61b10ff94220ca1f7a3fff46b55bb92b9e20
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip,deflate,identity
+      Accept:
+      - '*/*'
+      User-Agent:
+      - Mechanize/2.5.1 Ruby/2.0.0p247 (http://github.com/tenderlove/mechanize/)
+      Accept-Charset:
+      - ISO-8859-1,utf-8;q=0.7,*;q=0.7
+      Accept-Language:
+      - en-us,en;q=0.5
+      Host:
+      - api.github.com
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - 300
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - GitHub.com
+      Date:
+      - Tue, 24 Sep 2013 14:43:59 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Status:
+      - 200 OK
+      X-Ratelimit-Limit:
+      - '60'
+      X-Ratelimit-Remaining:
+      - '57'
+      X-Ratelimit-Reset:
+      - '1380036788'
+      Cache-Control:
+      - public, max-age=60, s-maxage=60
+      Last-Modified:
+      - Wed, 19 Jun 2013 13:35:12 GMT
+      Etag:
+      - '"dc8212d2e664510b63cb21d2744a1d44"'
+      Vary:
+      - Accept
+      - Accept-Encoding
+      X-Github-Media-Type:
+      - github.beta
+      X-Content-Type-Options:
+      - nosniff
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Expose-Headers:
+      - ETag, Link, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes,
+        X-Accepted-OAuth-Scopes
+      Access-Control-Allow-Origin:
+      - '*'
+      X-Github-Request-Id:
+      - B8B112A2:6827:11870C5:5241A52F
+      Content-Encoding:
+      - gzip
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA7WTSW/bMBCF/wrBAj05FheRWk7tqWnRAoWRXpIUwVAaWkqs
+        pSR1KAz/91JwBKToxQt6JWfm43tvuKe+AVrSIgWjueHM2iIVglXAbQbSWptq
+        o5QxhTAFCkZXdHK72NCEMPoySWBs19s2NJNZV0OXOBwHn9xBN8JmMr+TMDkz
+        hCRWJPG6a4NPzkA1ods9/c17w/qHcgEBptAMjpZ72kOHUdeXoYfQQB+FYgft
+        LPX59Wj9DNWLH3r+ocNZbCypIcxNgnF5w/QNL+64LKUqubinhxU9PijgfwME
+        h5G/X0LMs1RxXTBt6jTngqEQGlSmpAXNC6FTlWnN4IoQZ2CM8FRQ9KBD72E7
+        u/QN3RbJOO12xOGvCX0g72RGrBs64l69TUZwHp+OKc/R+8f+sf9Y1+TH5iuZ
+        L9t+S+zgyKc23E6GfPY+TiLvyfd57uY410eFsRb74Gn5sNgjmMVKpEylGpWq
+        pNBMW8gRTWaE5oxxbZi6yp5lA89AXbjjJxMOq0U/r5jlIJXgAiWzuYw/Ma+K
+        3AgGitfGZjYuToVXrMei/wzUhfpPJhx+Hv4AJVWyfuUEAAA=
+    http_version: 
+  recorded_at: Tue, 24 Sep 2013 14:43:59 GMT
+recorded_with: VCR 2.4.0
