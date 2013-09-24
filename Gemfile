@@ -1,4 +1,4 @@
-source :rubygems
+source 'https://rubygems.org'
 
 gem "cinch", "~> 2.0.3"
 gem "mechanize", "~> 2.5.1"
