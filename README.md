@@ -95,12 +95,6 @@ Ask if Turbot will make you a sandwich.  I kinda doubt he will.
 
 ![make_me_a_sandwich_example](https://raw.github.com/TampaRuby/turbot/master/assets/images/make_me_a_sandwich_example.png)
 
-#### Reddit Joke
-
-Ask turbot to tell you a joke.
-
-![reddit_joke_example](https://raw.github.com/TampaRuby/turbot/master/assets/images/reddit_joke_example.png)
-
 #### URL Handler
 
 Arguably the most useful plugin.  Prints short summary for a given url.  Does special formatting for youtube, twitter, et al.
