@@ -18,6 +18,6 @@ deploy:
   api_key:
     secure: V9u7Esxy0nJ7HKyFdWLHB5eB6io23BzPhV7YNJpYgaHls810GyFmbpokm5gspTF91a4nv0Lv2JEpavhZJjm3PwU8Z38eIUgjTdNjEJnl9GJCmM1CNRoolWF+qzy9wQeEhxfLuHjVzcUCQnT5CTc8XY3D3Qoyj+0npALPqMDHSWU=
   app: turbot
-  on:
+  'on':
     repo: TampaRuby/turbot
     branch: master
