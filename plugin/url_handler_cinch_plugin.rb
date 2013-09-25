@@ -4,6 +4,7 @@
 require_relative 'url_handler/common'
 require_relative 'url_handler/github_issue_handler'
 require_relative 'url_handler/github_pull_request_handler'
+require_relative 'url_handler/github_commit_handler'
 require_relative 'url_handler/github_repo_handler'
 require_relative 'url_handler/gist_handler'
 require_relative 'url_handler/twitter_user_handler'

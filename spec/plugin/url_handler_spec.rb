@@ -120,6 +120,17 @@ describe TurbotPlugins::UrlHandler do
       end
     end
 
+    context "when a github commit url is given" do
+      let(:url)       {'https://github.com/TampaRuby/turbot/commit/94ab61b10ff94220ca1f7a3fff46b55bb92b9e20'}
+      let(:message)   {double('message', :raw => url)}
+      let(:reply_text) {"github commit: \x02TampaRuby/turbot\x02 \x0294ab61b\x02 - Merge pull request #37 from rjackson/parse_github_urls"}
+
+      it "should reply." do
+        message.should_receive(:reply).with(reply_text)
+        VCR.use_cassette('url_handler_github_commit') { plugin.listen(message) }
+      end
+    end
+
     context "when an image url is given" do
       let(:url)        {'http://farm9.staticflickr.com/8013/7619514930_4a1ed85893_z.jpg'}
       let(:message)    {double('message', :raw => url)}
