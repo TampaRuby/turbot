@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+ruby '2.0.0'
+
 gem "cinch", "~> 2.0.3"
 gem "mechanize", "~> 2.5.1"
 gem "rMeetup", "~> 1.0"

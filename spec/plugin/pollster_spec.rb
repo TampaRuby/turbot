@@ -6,7 +6,7 @@ describe TurbotPlugins::Pollster do
 
   context "#set_poll" do
     context "If passed a string from a valid user." do
-      let(:m) { double(:user => stub(:nick => "rondale_sc"))  }
+      let(:m) { double(:user => double(:nick => "rondale_sc"))  }
       let(:question) { "This is a question" }
 
       it "should set the question for a poll" do
@@ -28,7 +28,7 @@ describe TurbotPlugins::Pollster do
     end
 
     context "If passed a string from invalid user." do
-      let(:m) { double(:user => stub(:nick => "not_valid_nick"))  }
+      let(:m) { double(:user => double(:nick => "not_valid_nick"))  }
       it "should return false" do
         m.should_receive(:reply).with("You do not have the correct permissions")
 

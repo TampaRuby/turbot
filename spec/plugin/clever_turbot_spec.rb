@@ -4,7 +4,7 @@ require_relative '../../plugin/clever_turbot_cinch_plugin.rb'
 
 describe TurbotPlugins::CleverTurbot do
   subject(:plugin){ described_class.new(double.as_null_object) }
-  let(:m) {double(:user => stub(:nick => "testnick"))  }
+  let(:m) {double(:user => double(:nick => "testnick"))  }
 
   context ".commands" do
     it "returns a PluginCommand instance." do
