@@ -1,15 +1,23 @@
 language: ruby
 gemfile:
-  - Gemfile
+- Gemfile
 rvm:
-  - 1.9.3
+- 1.9.3
 script:
-  - bundle exec rspec
+- bundle exec rspec
 notifications:
   irc:
     channels:
-      - "irc.freenode.org#turbot"
-      - "irc.freenode.org#tamparb"
+    - irc.freenode.org#turbot
+    - irc.freenode.org#tamparb
     on_success: change
     on_failure: change
     skip_join: true
+deploy:
+  provider: heroku
+  api_key:
+    secure: V9u7Esxy0nJ7HKyFdWLHB5eB6io23BzPhV7YNJpYgaHls810GyFmbpokm5gspTF91a4nv0Lv2JEpavhZJjm3PwU8Z38eIUgjTdNjEJnl9GJCmM1CNRoolWF+qzy9wQeEhxfLuHjVzcUCQnT5CTc8XY3D3Qoyj+0npALPqMDHSWU=
+  app: turbot
+  on:
+    repo: TampaRuby/turbot
+    branch: master
