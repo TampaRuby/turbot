@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/rondale-sc/turbot.png)](https://travis-ci.org/rondale-sc/turbot)
+[![Build Status](https://travis-ci.org/TampaRuby/turbot.png)](https://travis-ci.org/TampaRuby/turbot)
 
 ```
  _______         _           _
@@ -25,7 +25,7 @@ The main guidelines are as follows
 
 Let's take a look at the TurbotInfo plugin.
 
-![turbot_info_example](https://raw.github.com/rondale-sc/turbot/master/assets/images/turbot_info_example.png)
+![turbot_info_example](https://raw.github.com/TampaRuby/turbot/master/assets/images/turbot_info_example.png)
 
 1. Include `Cinch::Plugin` - This gives you access to all the methods that cinch provides.
 2. Set your prefix.  All commands are prefixed so that they aren't triggered accidentally.  The `PREFIX` constant is set to `.` (dot).  You may override it if you wish, but going with the default is probably the best way to go.
@@ -44,65 +44,65 @@ Plugins:
 
 The Meetup plugin gives some basic information about the next Tampa Bay Ruby Brigade meeting.
 
-![meetup_example](https://raw.github.com/rondale-sc/turbot/master/assets/images/meetup_example.png)
+![meetup_example](https://raw.github.com/TampaRuby/turbot/master/assets/images/meetup_example.png)
 
 #### Duck Duck Go
 
 This plugin lets you use Duck Duck Go's api in the IRC channel.  Check here for more info about possible commands: https://duckduckgo.com/api
 
-![duck_duck_go_example](https://raw.github.com/rondale-sc/turbot/master/assets/images/duck_duck_go_example.png)
+![duck_duck_go_example](https://raw.github.com/TampaRuby/turbot/master/assets/images/duck_duck_go_example.png)
 
 #### Vin Diesel
 
 As its name implies.  This is all about Vin Diesel.  Observe:
 
-![vin_diesel_example](https://raw.github.com/rondale-sc/turbot/master/assets/images/vin_diesel_example.png)
+![vin_diesel_example](https://raw.github.com/TampaRuby/turbot/master/assets/images/vin_diesel_example.png)
 
 #### Cowsay
 
 Renders output with Cowsay to IRC:
 
-![cowsay_example](https://raw.github.com/rondale-sc/turbot/master/assets/images/cowsay_example.png)
+![cowsay_example](https://raw.github.com/TampaRuby/turbot/master/assets/images/cowsay_example.png)
 
 #### Ferengi Rules
 
 Dorkiest of all the plugins!
 
-![ferengi_example](https://raw.github.com/rondale-sc/turbot/master/assets/images/ferengi_example.png)
+![ferengi_example](https://raw.github.com/TampaRuby/turbot/master/assets/images/ferengi_example.png)
 
 #### Gem Search
 
 Allows you to list a gem from rubygems.org.  `.gem <searchparam>` gives a list of potential matches.  `.gem info <searchparam>` gives info on specific gem.
 
-![gem_search_example](https://raw.github.com/rondale-sc/turbot/master/assets/images/gem_search_example.png)
+![gem_search_example](https://raw.github.com/TampaRuby/turbot/master/assets/images/gem_search_example.png)
 
 #### Github Status
 
 This plugin reports the status of Github. (Duh).  It also periodically reports if the status is down.
 
-![github_status_example](https://raw.github.com/rondale-sc/turbot/master/assets/images/github_status_example.png)
+![github_status_example](https://raw.github.com/TampaRuby/turbot/master/assets/images/github_status_example.png)
 
 #### Help
 
 This plugin reports all of the available commands.  To get further help, you can execute `.help <command name>`which will print an ASCII table of the commands matching your criteria.
 
-![help_example](https://raw.github.com/rondale-sc/turbot/master/assets/images/help_example.png)
-![help_example](https://raw.github.com/rondale-sc/turbot/master/assets/images/help_command_example.png)
+![help_example](https://raw.github.com/TampaRuby/turbot/master/assets/images/help_example.png)
+![help_example](https://raw.github.com/TampaRuby/turbot/master/assets/images/help_command_example.png)
 
 #### Make Me a Sandwich
 
 Ask if Turbot will make you a sandwich.  I kinda doubt he will.
 
-![make_me_a_sandwich_example](https://raw.github.com/rondale-sc/turbot/master/assets/images/make_me_a_sandwich_example.png)
+![make_me_a_sandwich_example](https://raw.github.com/TampaRuby/turbot/master/assets/images/make_me_a_sandwich_example.png)
 
 #### Reddit Joke
 
 Ask turbot to tell you a joke.
 
-![reddit_joke_example](https://raw.github.com/rondale-sc/turbot/master/assets/images/reddit_joke_example.png)
+![reddit_joke_example](https://raw.github.com/TampaRuby/turbot/master/assets/images/reddit_joke_example.png)
 
 #### URL Handler
 
 Arguably the most useful plugin.  Prints short summary for a given url.  Does special formatting for youtube, twitter, et al.
 
-![url_handler_example](https://raw.github.com/rondale-sc/turbot/master/assets/images/url_handler_example.png)
+![url_handler_example](https://raw.github.com/TampaRuby/turbot/master/assets/images/url_handler_example.png)
