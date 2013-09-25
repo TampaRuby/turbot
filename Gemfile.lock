@@ -45,7 +45,7 @@ GEM
     rspec-mocks (2.12.1)
     slop (3.3.3)
     terminal-table (1.4.5)
-    travis-lint (1.5.0)
+    travis-lint (1.7.0)
       hashr (~> 0.0.22)
     unf (0.0.5)
       unf_ext
